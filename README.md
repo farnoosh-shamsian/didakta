@@ -71,6 +71,37 @@ Shamsian, F., Crane, G., Rahimi, F., & Ferreira, A. D. (2024). Localizing Ancien
   to, kept so the migration stays reproducible after the betacode itself is gone
   from the files.
 
+### Annotated texts (`data/`)
+
+Greek texts annotated with Didakta tags, one CSV per text, one row per word:
+
+- `iliad-book1.csv`: Homer, *Iliad* 1. The tree is from the Perseus treebank, and the file includes the Persian word alignment and the Persian and Kurdish sentence translations.
+- `odyssey-book5.csv`: Homer, *Odyssey* 5. The sentence ids and the artificial nodes are from the Perseus treebank.
+- `aeschylus-persians.csv`: Aeschylus, *Persians*. The whole text is included; only the first part is annotated.
+
+Columns:
+
+- `sent_id`, `tok_id`, `line`, `form`, `lemma`, `postag`: the word. `postag` is the 9-character Perseus (AGDT) morphology.
+- `CASE`, `TENSE`, `MOOD`, `VOICE`, `INF`, `PART`, `ART`, `AUT`: one Didakta tag per family. `Agr` and `GBP` count as CASE. `—` means the word's form cannot take that family; an empty cell means not annotated yet.
+- `CASE_alt`, `TENSE_alt`, …: second guesses, best first, separated by `; `.
+- A tag may carry a refinement after a dot, e.g. `SubjSubor.purpose`. The part before the dot is the Didakta tag and points to its grammar entry; the part after it narrows the tag and has no entry of its own. So far only `SubjSubor` and `OptSubor` are refined (Iliad, Odyssey), by clause type: `purpose`, `fear`, `conditional`, `temporal`, `relative`, `question` (indirect question), `simile`.
+- `status`: `uncertain` when there is a second guess, a `?`, or a clause type that still needs checking.
+- `note`: the annotator's notes. Two kinds of note were added later and are not the annotator's:
+  - a part starting `CLAUSE:` says why a clause type needs checking; the clause types were filled in from the tree and by reading;
+  - a part starting `OLD CODE:` says how a code from an earlier version of the tag list (`In1`, `Subcl4`, `N1`, …) was read as a current tag. Where that reading is a guess, the row is `uncertain`.
+- A tag is written only on the word it describes. Where the original sheet repeated it on a particle or preposition (ἄν with a potential optative, μή with an imperative), the note on that word says `with OptPoten`, `with ImprComm`, ….
+- `head`, `relation`: the dependency tree (Perseus AGDT style).
+- Text-specific columns:
+  - `artificial` (Iliad, Odyssey): `elliptic` marks a treebank placeholder for an unexpressed word, usually a verb (form `[0]`, no tags);
+  - `fas_align`, `note_kur`, `sentence_persian`, `sentence_kurdish` (Iliad; the sentence translations sit on each sentence's first row);
+  - `speaker`, `section` (*Persians*).
+- `didakta_raw`: the tag cell exactly as it was in the original spreadsheet.
+
+The other two files are used by the scripts in `annotation-experiments/`:
+
+- `homer.csv`: Didakta gold for *Iliad* 2–24, in its earlier format.
+- `didakta-tag-list.csv`: the tag list, one row per tag with its category.
+
 ## TEI editions
 
 `didakta-english.xml`, `didakta-persian.xml` and `didakta-kurdish.xml` are TEI P5

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+<body>
+<title>Didakta Reader</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Vazirmatn:wght@400;600&display=swap">
+<style>
+/* Layout: a reading column of Greek on the left, a sticky analysis panel on the right (a bottom sheet on phones). */
+:root {
+  --bg: #f3f4f1;          /* paper, faintly green-grey */
+  --surface: #fbfbf9;
+  --ink: #1c222b;
+  --muted: #5b6470;
+  --rule: #d8dcd5;
+  --accent: #1d6a72;      /* annotated words, links */
+  --accent-soft: #dcebe8;
+  --head: #9a6a1c;        /* the selected word's head */
+  --model: #7a4f9a;       /* draft annotations */
+  --greek: "Gentium Book Plus", "Gentium Plus", "Noto Serif", "Times New Roman", serif;
+  --ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+  --rtl: "Vazirmatn", "Segoe UI", Tahoma, sans-serif;
+  --side: 420px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14181d; --surface: #1a1f25; --ink: #e3e6e8; --muted: #9aa3ad; --rule: #2c333b;
+    --accent: #6cc1c6; --accent-soft: #1f3a3c; --head: #e0b25e; --model: #c49be2; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14181d; --surface: #1a1f25; --ink: #e3e6e8; --muted: #9aa3ad; --rule: #2c333b;
+  --accent: #6cc1c6; --accent-soft: #1f3a3c; --head: #e0b25e; --model: #c49be2; color-scheme: dark;
+}
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--ui);
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* header */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--surface); border-bottom: 1px solid var(--rule);
+  padding-block: 10px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px;
+}
+.brand { font-weight: 600; letter-spacing: .02em; text-decoration: none; color: var(--ink); white-space: nowrap; }
+.brand span { font-family: var(--greek); font-weight: 400; color: var(--accent); }
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-left: auto; min-width: 0; }
+.nav .work { font-family: var(--greek); font-size: 17px; }
+.nav select, .nav button {
+  background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: 4px 8px; cursor: pointer;
+}
+.nav button:disabled { opacity: .4; cursor: default; }
+
+/* index */
+.index {
+  max-width: 880px; margin: 0 auto; padding-block: 32px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.index h1 { font-family: var(--greek); font-weight: 400; font-size: 34px; margin: 0 0 4px; text-wrap: balance; }
+.index .lede { color: var(--muted); margin: 0 0 28px; max-width: 62ch; }
+.works { display: grid; gap: 22px; }
+.work-row { display: grid; grid-template-columns: 180px 1fr; gap: 6px 20px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.work-row h2 { margin: 0; font-family: var(--greek); font-weight: 400; font-size: 24px; line-height: 1.1; }
+.work-row .by { color: var(--muted); font-size: 13px; }
+.work-row .count { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; margin-top: 4px; }
+.books { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; min-width: 0; }
+.book {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-width: 40px; height: 34px; padding: 0 8px; border: 1px solid var(--rule); border-radius: 6px;
+  text-decoration: none; color: var(--ink); background: var(--surface); font-variant-numeric: tabular-nums; overflow: hidden;
+}
+.book:hover { border-color: var(--accent); }
+.book i { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--accent); }
+.credits { margin-top: 40px; color: var(--muted); font-size: 12.5px; max-width: 70ch; }
+.credits p { margin: 4px 0; }
+
+/* reader */
+.reader { display: grid; grid-template-columns: minmax(0, 1fr) var(--side); align-items: start; }
+.text {
+  min-width: 0; padding-block: 28px 80px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: 24px;
+}
+.page { max-width: 40em; margin: 0 auto; font-family: var(--greek); font-size: 20px; line-height: 1.75; }
+.page h2 { font-family: var(--ui); font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 32px 0 8px; }
+.page h2:first-child { margin-top: 0; }
+.page p { margin: 0 0 14px; }
+.line { display: grid; grid-template-columns: 3.2em minmax(0, 1fr); }
+.ln { font-family: var(--ui); font-size: 11px; color: var(--muted); text-align: right; padding-right: 1em; padding-top: .55em; font-variant-numeric: tabular-nums; user-select: none; }
+.speaker { font-family: var(--ui); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 14px 0 2px 3.2em; }
+.sec { font-family: var(--ui); font-size: 10.5px; color: var(--muted); vertical-align: super; margin: 0 2px 0 4px; font-variant-numeric: tabular-nums; user-select: none; }
+.w { cursor: pointer; border-radius: 3px; }
+.w:hover { background: var(--accent-soft); }
+.w.a { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+.w.sel { background: var(--accent); color: var(--surface); text-decoration-color: var(--surface); }
+.w.hd { box-shadow: inset 0 -2px 0 var(--head); }
+.loading { font-family: var(--ui); color: var(--muted); }
+
+/* side panel */
+.side {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--top-h, 54px)); height: calc(100vh - var(--top-h, 54px) - env(safe-area-inset-top, 0px));
+  overflow-y: auto; background: var(--surface); border-left: 1px solid var(--rule);
+  padding-block: 22px 40px; padding-left: 22px; padding-right: max(22px, env(safe-area-inset-right, 0px));
+}
+.side .close { display: none; }
+.hint { color: var(--muted); }
+.hint b { color: var(--ink); font-weight: 600; }
+.form { font-family: var(--greek); font-size: 32px; line-height: 1.1; margin: 0; }
+.lemma { font-family: var(--greek); font-size: 18px; color: var(--muted); margin-top: 2px; }
+.cite { font-size: 12.5px; color: var(--muted); margin-top: 6px; font-variant-numeric: tabular-nums; }
+.block { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.block h3 { margin: 0 0 10px; font-size: 11.5px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.kv { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 6px 12px; font-size: 14px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; min-width: 0; }
+code { font-family: var(--mono); font-size: 12.5px; background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 0 4px; }
+.headlink { font-family: var(--greek); font-size: 16px; background: none; border: 0; padding: 0; color: var(--head); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.src { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+.by { font-size: 12.5px; color: var(--muted); }
+.by.model { color: var(--model); }
+.fam { margin-top: 12px; }
+.fam-name { font-size: 12.5px; color: var(--muted); margin-bottom: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: baseline; gap: 6px; border: 1px solid var(--rule); border-radius: 999px; padding: 2px 10px; background: var(--bg); cursor: pointer; font-size: 14px; }
+.chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.chip .p { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.langs { margin-left: auto; display: inline-flex; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; text-transform: none; letter-spacing: 0; }
+.langs button { border: 0; background: none; padding: 1px 8px; font-size: 12px; cursor: pointer; color: var(--muted); }
+.langs button[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); }
+.entry { margin-top: 14px; background: var(--bg); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; font-size: 14.5px; }
+.entry .etitle { font-family: var(--greek); font-size: 19px; margin: 0 0 2px; }
+.entry .ecat { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.entry p { margin: 0 0 8px; }
+.entry .ex { font-family: var(--greek); font-size: 15.5px; }
+.entry sup { font-size: 10px; color: var(--muted); }
+.entry .notes { margin: 10px 0 0; padding-left: 22px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.entry[dir="rtl"] { font-family: var(--rtl); }
+.entry[dir="rtl"] .notes { padding-left: 0; padding-right: 22px; }
+.entry .noentry { color: var(--muted); }
+.note { margin-top: 12px; font-size: 13.5px; color: var(--muted); }
+.none { color: var(--muted); }
+
+@media (max-width: 900px) {
+  :root { --side: 360px; }
+  .work-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .reader { grid-template-columns: minmax(0, 1fr); }
+  .text { padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .page { font-size: 19px; }
+  .side {
+    position: fixed; left: 0; right: 0; bottom: 0; top: auto; height: auto; max-height: 62vh; z-index: 8;
+    border-left: 0; border-top: 1px solid var(--rule); box-shadow: 0 -8px 24px rgba(0,0,0,.12);
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  }
+  .side.empty { display: none; }
+  .side .close { display: inline-block; float: right; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; padding: 2px 10px; cursor: pointer; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .w { transition: background-color .12s; }
+}
+</style>
+
+<header class="top" id="top">
+  <a class="brand" href="#">Didakta <span>Reader</span></a>
+  <nav class="nav" id="nav" hidden>
+    <span class="work" id="nav-work"></span>
+    <button id="prev" type="button" aria-label="Previous book">‹</button>
+    <select id="book" aria-label="Book"></select>
+    <button id="next" type="button" aria-label="Next book">›</button>
+  </nav>
+</header>
+
+<main id="index" class="index" hidden></main>
+
+<div id="reader" class="reader" hidden>
+  <section class="text"><div class="page" id="page" tabindex="0" aria-label="Greek text"></div></section>
+  <aside class="side empty" id="side" aria-live="polite"></aside>
+</div>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+  };
+
+  let INDEX = null, ENTRIES = null, BOOK = null, WORK = null, SEL = -1, LANG = store.get("didakta-lang") || "en";
+  const cache = new Map();
+  const getJSON = (p) => fetch(p).then((r) => { if (!r.ok) throw new Error(p + ": " + r.status); return r.json(); });
+
+  // ---------- treebank labels
+  const POS = { n: "noun", v: "verb", a: "adjective", d: "adverb", l: "article", g: "particle", c: "conjunction", r: "preposition", p: "pronoun", m: "numeral", i: "interjection", e: "exclamation", u: "punctuation", x: "irregular" };
+  const SLOTS = [
+    null,
+    { 1: "1st person", 2: "2nd person", 3: "3rd person" },
+    { s: "singular", p: "plural", d: "dual" },
+    { p: "present", i: "imperfect", r: "perfect", l: "pluperfect", t: "future perfect", f: "future", a: "aorist" },
+    { i: "indicative", s: "subjunctive", o: "optative", n: "infinitive", m: "imperative", p: "participle" },
+    { a: "active", p: "passive", m: "middle", e: "middle or passive" },
+    { m: "masculine", f: "feminine", n: "neuter", c: "common" },
+    { n: "nominative", g: "genitive", d: "dative", a: "accusative", v: "vocative", l: "locative" },
+    { c: "comparative", s: "superlative" },
+  ];
+  const REL = {
+    PRED: "predicate", SBJ: "subject", OBJ: "object", ATR: "attribute", ADV: "adverbial", ATV: "complement", AtvV: "complement",
+    PNOM: "predicate nominal", OCOMP: "object complement", COORD: "coordinator", APOS: "apposition", AuxP: "preposition",
+    AuxC: "conjunction", AuxR: "reflexive", AuxV: "auxiliary verb", AuxX: "comma", AuxG: "bracket", AuxK: "final punctuation",
+    AuxY: "sentence particle", AuxZ: "emphasizing particle", ExD: "governed by an elided word", MWE: "multi-word expression",
+  };
+  const FAMS = ["CASE", "TENSE", "VOICE", "MOOD", "INF", "PART", "ART", "AUT"];
+  const FAMNAME = { CASE: "Case", TENSE: "Tense", VOICE: "Voice", MOOD: "Mood", INF: "Infinitive", PART: "Participle", ART: "Article", AUT: "αὐτός" };
+
+  function morph(tag) {
+    if (!tag) return "";
+    const out = [POS[tag[0]] || ""];
+    for (let k = 1; k < 9; k++) { const v = SLOTS[k] && SLOTS[k][tag[k]]; if (v) out.push(v); }
+    return out.filter(Boolean).join(" · ");
+  }
+  function relation(rel) {
+    if (!rel) return "";
+    const [base, ...rest] = rel.split("_");
+    let s = REL[base] || base;
+    if (rest.includes("CO")) s += ", coordinated";
+    if (rest.includes("AP")) s += ", in apposition";
+    if (rest.includes("ExD")) s += ", with an elided word";
+    return s;
+  }
+  const isPunct = (t) => t[2].startsWith("u") || /^[,.·;:!?·;’ʼ”“"'()\[\]—–-]+$/.test(t[0]);
+
+  // ---------- routing
+  function route() {
+    const h = decodeURIComponent(location.hash.slice(1));
+    const m = h.match(/^([a-z]+)-(\d+)$/);
+    if (INDEX && m && INDEX.works.some((w) => w.id === m[1])) openBook(m[1], +m[2]);
+    else showIndex();
+  }
+
+  function showIndex() {
+    $("#reader").hidden = true; $("#nav").hidden = true; $("#index").hidden = false;
+    document.title = "Didakta Reader";
+    const fmt = (n) => n.toLocaleString("en");
+    const rows = INDEX.works.map((w) => {
+      const words = w.books.reduce((a, b) => a + b.words, 0), ann = w.books.reduce((a, b) => a + b.annotated, 0);
+      const label = w.books.length === 1 ? "" : "Book ";
+      const books = w.books.map((b) => {
+        const pct = b.words ? Math.min(100, (100 * b.annotated) / b.words) : 0;
+        return `<a class="book" href="#${w.id}-${b.n}" title="${label}${b.n}: ${fmt(b.annotated)} of ${fmt(b.words)} words tagged">${w.books.length === 1 ? "Read" : b.n}${pct ? `<i style="width:${pct.toFixed(1)}%"></i>` : ""}</a>`;
+      }).join("");
+      return `<div class="work-row"><div><h2>${esc(w.title)}</h2><div class="by">${esc(w.author)}</div>
+        <div class="count">${fmt(words)} words · ${ann ? fmt(ann) + " tagged" : "no Didakta tags yet"}</div></div>
+        <div class="books">${books}</div></div>`;
+    }).join("");
+    const src = Object.values(INDEX.sources).map((s) => `<li>${esc(s)}</li>`).join("");
+    $("#index").innerHTML = `<h1>Didakta Reader</h1>
+      <p class="lede">Read the Greek text and click any word to see its treebank analysis and its Didakta annotation, with the full Didakta entry. Underlined words have Didakta tags; the bar under each book shows how much of it is tagged.</p>
+      <div class="works">${rows}</div>
+      <div class="credits"><p>Treebanks:</p><ul>${src}</ul>
+      <p>Didakta tags and entries: the Didakta project. Greek texts follow the treebanks.</p></div>`;
+  }
+
+  async function openBook(work, n) {
+    const w = INDEX.works.find((x) => x.id === work);
+    const b = w.books.find((x) => x.n === n) || w.books[0];
+    $("#index").hidden = true; $("#reader").hidden = false; $("#nav").hidden = false;
+    $("#nav-work").textContent = w.title;
+    $("#book").innerHTML = w.books.map((x) => `<option value="${x.n}"${x.n === b.n ? " selected" : ""}>${w.books.length === 1 ? "Whole text" : "Book " + x.n}</option>`).join("");
+    const i = w.books.indexOf(b);
+    $("#prev").disabled = i <= 0; $("#next").disabled = i >= w.books.length - 1;
+    document.title = `${w.title} ${w.books.length > 1 ? b.n : ""} · Didakta Reader`;
+    measureTop();
+    if (BOOK && BOOK.work === work && BOOK.book === b.n) return;
+    $("#page").innerHTML = '<p class="loading">Loading the text…</p>';
+    const key = `${work}-${b.n}`;
+    let data = cache.get(key);
+    try {
+      if (!data) { data = await getJSON(`data/${key}.json`); cache.set(key, data); }
+    } catch (e) {
+      $("#page").innerHTML = `<p class="loading">This book could not be loaded (${esc(e.message)}). Reload the page to try again.</p>`;
+      return;
+    }
+    WORK = w; BOOK = data; SEL = -1;
+    render();
+    showEmpty();
+    window.scrollTo(0, 0);
+  }
+
+  // ---------- text
+  function render() {
+    const t = BOOK.t, ann = BOOK.ann, verse = WORK.kind === "verse";
+    const refAt = new Map(BOOK.refs.map(([k, r]) => [k, r]));
+    const spAt = new Map((BOOK.sp || []).map(([k, s]) => [k, s]));
+    const out = [];
+    let buf = [], label = "", lastChapter = null;
+    const word = (k) => {
+      const tok = t[k];
+      if (isPunct(tok)) return esc(tok[0]);
+      return ` <span class="w${ann[k] ? " a" : ""}" data-i="${k}">${esc(tok[0])}</span>`;
+    };
+    // verse: one row per line; prose: one paragraph per chapter, with section numbers
+    const flush = () => {
+      if (!buf.length) return;
+      if (verse) {
+        const n = label.includes(".") ? label.split(".").pop() : label;
+        const show = n && (+n === 1 || +n % 5 === 0);
+        out.push(`<div class="line"><span class="ln">${show ? esc(n) : ""}</span><span>${buf.join("")}</span></div>`);
+      } else {
+        out.push(`<p>${buf.join("")}</p>`);
+      }
+      buf = [];
+    };
+    for (let k = 0; k < t.length; k++) {
+      if (t[k][5]) continue;                       // artificial node: not in the text
+      if (spAt.has(k)) { flush(); out.push(`<div class="speaker">${esc(spAt.get(k))}</div>`); }
+      if (refAt.has(k)) {
+        const ref = refAt.get(k);
+        if (verse) { flush(); label = ref; }
+        else {
+          const parts = ref.split(".");
+          const chapter = parts.slice(0, 2).join(".");
+          if (chapter !== lastChapter) { flush(); out.push(`<h2>Chapter ${esc(parts[1] || "")}</h2>`); lastChapter = chapter; }
+          buf.push(` <span class="sec">${esc(parts[2] || ref)}</span>`);
+        }
+      }
+      buf.push(word(k));
+    }
+    flush();
+    $("#page").innerHTML = out.join("");
+  }
+
+  // ---------- side panel
+  function refOf(k) {
+    let r = "";
+    for (const [i, ref] of BOOK.refs) { if (i > k) break; r = ref; }
+    return r;
+  }
+  function srcOf(k) {
+    let s = "";
+    for (const [i, code] of BOOK.src) { if (i > k) break; s = code; }
+    return s;
+  }
+  function showEmpty() {
+    const side = $("#side");
+    side.classList.add("empty");
+    const n = Object.keys(BOOK.ann).length;
+    side.innerHTML = `<p class="hint">Click a word to see its treebank analysis and its Didakta annotation.</p>
+      <p class="hint">${n ? `<b>${n.toLocaleString("en")}</b> words in this ${WORK.books.length > 1 ? "book" : "text"} have Didakta tags; they are underlined.` : "No word in this book has Didakta tags yet."}</p>`;
+    document.querySelectorAll(".w.sel, .w.hd").forEach((e) => e.classList.remove("sel", "hd"));
+  }
+
+  function entryHTML(tag) {
+    const e = ENTRIES && ENTRIES[tag];
+    if (!e) return `<div class="entry"><p class="noentry">${esc(tag)}: no Didakta entry for this tag.</p></div>`;
+    const use = e[LANG] ? LANG : "en", v = e[use];
+    return `<div class="entry" dir="${use === "en" ? "ltr" : "rtl"}" lang="${use === "en" ? "en" : use === "fa" ? "fa" : "ckb"}">
+      <p class="etitle"><bdi>§${esc(tag)}.</bdi> ${v.title}</p>${v.category ? `<div class="ecat">${esc(v.category)}</div>` : ""}${v.html}</div>`;
+  }
+
+  function select(k, scroll) {
+    if (k < 0 || !BOOK || !BOOK.t[k]) return;
+    SEL = k;
+    const tok = BOOK.t[k], a = BOOK.ann[k], head = tok[4] >= 0 ? BOOK.t[tok[4]] : null;
+    document.querySelectorAll(".w.sel, .w.hd").forEach((e) => e.classList.remove("sel", "hd"));
+    const el = document.querySelector(`.w[data-i="${k}"]`);
+    if (el) { el.classList.add("sel"); if (scroll) el.scrollIntoView({ block: "center", behavior: "smooth" }); }
+    if (head) { const h = document.querySelector(`.w[data-i="${tok[4]}"]`); if (h) h.classList.add("hd"); }
+
+    const ref = refOf(k);
+    const cite = `${WORK.title} ${WORK.kind === "verse" && WORK.books.length > 1 ? ref : WORK.kind === "verse" ? "line " + ref : ref}`;
+    let html = `<button class="close" type="button" id="close">Close</button>
+      <p class="form">${esc(tok[0])}</p>${tok[1] ? `<div class="lemma">${esc(tok[1])}</div>` : ""}<div class="cite">${esc(cite)}</div>`;
+
+    html += `<div class="block"><h3>Treebank</h3><dl class="kv">
+      <dt>Word class</dt><dd>${esc(morph(tok[2])) || "—"}</dd>
+      <dt>Postag</dt><dd><code>${esc(tok[2] || "—")}</code></dd>
+      <dt>Relation</dt><dd>${esc(relation(tok[3])) || "—"} <code>${esc(tok[3])}</code></dd>
+      <dt>Head</dt><dd>${head ? `<button class="headlink" type="button" data-go="${tok[4]}">${esc(head[0])}</button>` : "none (sentence root)"}</dd>
+      </dl><div class="src">${esc(INDEX.sources[srcOf(k)] || "")}</div></div>`;
+
+    html += `<div class="block"><h3>Didakta<span class="langs" role="group" aria-label="Entry language">
+      <button type="button" data-lang="en" aria-pressed="${LANG === "en"}">EN</button>
+      <button type="button" data-lang="fa" aria-pressed="${LANG === "fa"}" lang="fa">فارسی</button>
+      <button type="button" data-lang="ku" aria-pressed="${LANG === "ku"}" lang="ckb">کوردی</button></span></h3>`;
+    if (!a) {
+      html += `<p class="none">No Didakta annotation for this word yet.</p></div>`;
+    } else {
+      const by = a.by === "model" ? `${INDEX.by.model}${a.who ? " (" + esc(a.who) + ")" : ""}` : INDEX.by[a.by] || "";
+      html += `<div class="by ${a.by === "model" ? "model" : ""}">${esc(by)}</div>`;
+      let first = null;
+      for (const fam of FAMS) {
+        const tags = a.f[fam];
+        if (!tags) continue;
+        html += `<div class="fam"><div class="fam-name">${FAMNAME[fam]}</div><div class="chips">` + tags.map(([tag, p], j) => {
+          if (!first) first = tag;
+          return `<button class="chip" type="button" data-tag="${esc(tag)}" aria-pressed="false">${esc(tag)}${p != null ? `<span class="p">${Math.round(p * 100)}%</span>` : j ? `<span class="p">alternative</span>` : ""}</button>`;
+        }).join("") + "</div></div>";
+      }
+      if (a.n) html += `<p class="note">${esc(a.n)}</p>`;
+      html += `<div id="entry"></div></div>`;
+      html += "";
+      setTimeout(() => showEntry(first), 0);
+    }
+    const side = $("#side");
+    side.classList.remove("empty");
+    side.innerHTML = html;
+    side.scrollTop = 0;
+  }
+
+  let ENTRY_TAG = null;
+  async function showEntry(tag) {
+    if (!tag) return;
+    ENTRY_TAG = tag;
+    document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.tag === tag)));
+    const box = $("#entry");
+    if (!box) return;
+    if (!ENTRIES) {
+      box.innerHTML = '<p class="loading">Loading the entry…</p>';
+      try { ENTRIES = await getJSON("data/entries.json"); }
+      catch (e) { box.innerHTML = `<p class="none">The Didakta entries could not be loaded (${esc(e.message)}).</p>`; return; }
+    }
+    if (ENTRY_TAG === tag && $("#entry")) $("#entry").innerHTML = entryHTML(tag);
+  }
+
+  // ---------- events
+  $("#page").addEventListener("click", (e) => {
+    const w = e.target.closest(".w");
+    if (w) select(+w.dataset.i, false);
+  });
+  $("#side").addEventListener("click", (e) => {
+    const go = e.target.closest("[data-go]"); if (go) return select(+go.dataset.go, true);
+    const chip = e.target.closest(".chip"); if (chip) return showEntry(chip.dataset.tag);
+    const lang = e.target.closest("[data-lang]");
+    if (lang) {
+      LANG = lang.dataset.lang; store.set("didakta-lang", LANG);
+      document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
+      return showEntry(ENTRY_TAG);
+    }
+    if (e.target.closest("#close")) showEmpty();
+  });
+  $("#page").addEventListener("keydown", (e) => {
+    if (SEL < 0 || !["ArrowRight", "ArrowLeft"].includes(e.key)) return;
+    e.preventDefault();
+    const step = e.key === "ArrowRight" ? 1 : -1;
+    for (let k = SEL + step; k >= 0 && k < BOOK.t.length; k += step) {
+      if (!BOOK.t[k][5] && !isPunct(BOOK.t[k])) { select(k, true); break; }
+    }
+  });
+  $("#book").addEventListener("change", (e) => { location.hash = `${WORK.id}-${e.target.value}`; });
+  const step = (d) => { const i = WORK.books.findIndex((b) => b.n === BOOK.book) + d; if (WORK.books[i]) location.hash = `${WORK.id}-${WORK.books[i].n}`; };
+  $("#prev").addEventListener("click", () => step(-1));
+  $("#next").addEventListener("click", () => step(1));
+  window.addEventListener("hashchange", route);
+  function measureTop() { document.documentElement.style.setProperty("--top-h", $("#top").offsetHeight + "px"); }
+  window.addEventListener("resize", measureTop);
+
+  getJSON("data/index.json").then((ix) => { INDEX = ix; route(); }).catch((e) => {
+    $("#index").hidden = false;
+    $("#index").innerHTML = `<h1>Didakta Reader</h1><p class="lede">The list of texts could not be loaded (${esc(e.message)}). Open this page through a web server, not as a local file.</p>`;
+  });
+})();
+</script>
+
+</body>
+</html>

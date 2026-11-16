@@ -1,0 +1,439 @@
+{
+ "works": [
+  {
+   "id": "iliad",
+   "title": "Iliad",
+   "author": "Homer",
+   "kind": "verse",
+   "books": [
+    {
+     "n": 1,
+     "words": 5183,
+     "annotated": 2931,
+     "kb": 483
+    },
+    {
+     "n": 2,
+     "words": 6853,
+     "annotated": 4110,
+     "kb": 604
+    },
+    {
+     "n": 3,
+     "words": 3701,
+     "annotated": 2159,
+     "kb": 320
+    },
+    {
+     "n": 4,
+     "words": 4363,
+     "annotated": 2595,
+     "kb": 381
+    },
+    {
+     "n": 5,
+     "words": 7356,
+     "annotated": 0,
+     "kb": 399
+    },
+    {
+     "n": 6,
+     "words": 4275,
+     "annotated": 2540,
+     "kb": 372
+    },
+    {
+     "n": 7,
+     "words": 3883,
+     "annotated": 2289,
+     "kb": 337
+    },
+    {
+     "n": 8,
+     "words": 4584,
+     "annotated": 2643,
+     "kb": 393
+    },
+    {
+     "n": 9,
+     "words": 5820,
+     "annotated": 3396,
+     "kb": 503
+    },
+    {
+     "n": 10,
+     "words": 4785,
+     "annotated": 2722,
+     "kb": 409
+    },
+    {
+     "n": 11,
+     "words": 6884,
+     "annotated": 4035,
+     "kb": 599
+    },
+    {
+     "n": 12,
+     "words": 3777,
+     "annotated": 2150,
+     "kb": 326
+    },
+    {
+     "n": 13,
+     "words": 6733,
+     "annotated": 3936,
+     "kb": 586
+    },
+    {
+     "n": 14,
+     "words": 4275,
+     "annotated": 2516,
+     "kb": 369
+    },
+    {
+     "n": 15,
+     "words": 6096,
+     "annotated": 3544,
+     "kb": 525
+    },
+    {
+     "n": 16,
+     "words": 7002,
+     "annotated": 4166,
+     "kb": 610
+    },
+    {
+     "n": 17,
+     "words": 6181,
+     "annotated": 3590,
+     "kb": 535
+    },
+    {
+     "n": 18,
+     "words": 5047,
+     "annotated": 2932,
+     "kb": 435
+    },
+    {
+     "n": 19,
+     "words": 3479,
+     "annotated": 2037,
+     "kb": 300
+    },
+    {
+     "n": 20,
+     "words": 4112,
+     "annotated": 2369,
+     "kb": 353
+    },
+    {
+     "n": 21,
+     "words": 5108,
+     "annotated": 2978,
+     "kb": 439
+    },
+    {
+     "n": 22,
+     "words": 4350,
+     "annotated": 2492,
+     "kb": 371
+    },
+    {
+     "n": 23,
+     "words": 7356,
+     "annotated": 4197,
+     "kb": 630
+    },
+    {
+     "n": 24,
+     "words": 6899,
+     "annotated": 3929,
+     "kb": 587
+    }
+   ]
+  },
+  {
+   "id": "odyssey",
+   "title": "Odyssey",
+   "author": "Homer",
+   "kind": "verse",
+   "books": [
+    {
+     "n": 1,
+     "words": 3780,
+     "annotated": 0,
+     "kb": 200
+    },
+    {
+     "n": 2,
+     "words": 3799,
+     "annotated": 0,
+     "kb": 201
+    },
+    {
+     "n": 3,
+     "words": 4273,
+     "annotated": 0,
+     "kb": 227
+    },
+    {
+     "n": 4,
+     "words": 7326,
+     "annotated": 0,
+     "kb": 389
+    },
+    {
+     "n": 5,
+     "words": 4297,
+     "annotated": 2392,
+     "kb": 366
+    },
+    {
+     "n": 6,
+     "words": 2890,
+     "annotated": 0,
+     "kb": 153
+    },
+    {
+     "n": 7,
+     "words": 2910,
+     "annotated": 0,
+     "kb": 156
+    },
+    {
+     "n": 8,
+     "words": 5024,
+     "annotated": 0,
+     "kb": 268
+    },
+    {
+     "n": 9,
+     "words": 4702,
+     "annotated": 0,
+     "kb": 251
+    },
+    {
+     "n": 10,
+     "words": 4976,
+     "annotated": 0,
+     "kb": 264
+    },
+    {
+     "n": 11,
+     "words": 5444,
+     "annotated": 0,
+     "kb": 291
+    },
+    {
+     "n": 12,
+     "words": 3866,
+     "annotated": 0,
+     "kb": 205
+    },
+    {
+     "n": 13,
+     "words": 3794,
+     "annotated": 0,
+     "kb": 201
+    },
+    {
+     "n": 14,
+     "words": 4623,
+     "annotated": 0,
+     "kb": 245
+    },
+    {
+     "n": 15,
+     "words": 4811,
+     "annotated": 0,
+     "kb": 256
+    },
+    {
+     "n": 16,
+     "words": 4179,
+     "annotated": 0,
+     "kb": 221
+    },
+    {
+     "n": 17,
+     "words": 5319,
+     "annotated": 0,
+     "kb": 282
+    },
+    {
+     "n": 18,
+     "words": 3754,
+     "annotated": 0,
+     "kb": 198
+    },
+    {
+     "n": 19,
+     "words": 5230,
+     "annotated": 0,
+     "kb": 277
+    },
+    {
+     "n": 20,
+     "words": 3390,
+     "annotated": 0,
+     "kb": 180
+    },
+    {
+     "n": 21,
+     "words": 3662,
+     "annotated": 0,
+     "kb": 194
+    },
+    {
+     "n": 22,
+     "words": 4283,
+     "annotated": 0,
+     "kb": 228
+    },
+    {
+     "n": 23,
+     "words": 3225,
+     "annotated": 0,
+     "kb": 171
+    },
+    {
+     "n": 24,
+     "words": 4680,
+     "annotated": 0,
+     "kb": 250
+    }
+   ]
+  },
+  {
+   "id": "persians",
+   "title": "Persians",
+   "author": "Aeschylus",
+   "kind": "verse",
+   "books": [
+    {
+     "n": 1,
+     "words": 6226,
+     "annotated": 308,
+     "kb": 359
+    }
+   ]
+  },
+  {
+   "id": "cyropaedia",
+   "title": "Cyropaedia",
+   "author": "Xenophon",
+   "kind": "prose",
+   "books": [
+    {
+     "n": 1,
+     "words": 14021,
+     "annotated": 53,
+     "kb": 745
+    },
+    {
+     "n": 2,
+     "words": 9209,
+     "annotated": 0,
+     "kb": 478
+    },
+    {
+     "n": 3,
+     "words": 9655,
+     "annotated": 0,
+     "kb": 496
+    },
+    {
+     "n": 4,
+     "words": 10159,
+     "annotated": 0,
+     "kb": 523
+    },
+    {
+     "n": 5,
+     "words": 13282,
+     "annotated": 0,
+     "kb": 683
+    },
+    {
+     "n": 6,
+     "words": 8711,
+     "annotated": 0,
+     "kb": 451
+    },
+    {
+     "n": 7,
+     "words": 10690,
+     "annotated": 0,
+     "kb": 560
+    },
+    {
+     "n": 8,
+     "words": 15900,
+     "annotated": 0,
+     "kb": 853
+    }
+   ]
+  },
+  {
+   "id": "anabasis",
+   "title": "Anabasis",
+   "author": "Xenophon",
+   "kind": "prose",
+   "books": [
+    {
+     "n": 1,
+     "words": 10517,
+     "annotated": 0,
+     "kb": 560
+    },
+    {
+     "n": 2,
+     "words": 7668,
+     "annotated": 0,
+     "kb": 398
+    },
+    {
+     "n": 3,
+     "words": 7973,
+     "annotated": 0,
+     "kb": 421
+    },
+    {
+     "n": 4,
+     "words": 9334,
+     "annotated": 0,
+     "kb": 488
+    },
+    {
+     "n": 5,
+     "words": 9328,
+     "annotated": 0,
+     "kb": 483
+    },
+    {
+     "n": 6,
+     "words": 7759,
+     "annotated": 0,
+     "kb": 404
+    },
+    {
+     "n": 7,
+     "words": 12593,
+     "annotated": 0,
+     "kb": 660
+    }
+   ]
+  }
+ ],
+ "sources": {
+  "agdt": "Perseus Ancient Greek Dependency Treebank 2.1 (hand-made, CC BY-SA)",
+  "gorman": "Vanessa Gorman's treebank (hand-made, CC BY-NC-SA 4.0)",
+  "glaux-auto": "GLAUx (automatic parse, CC BY-SA 4.0)",
+  "glaux-manual": "GLAUx (checked by hand, CC BY-SA 4.0)",
+  "persians": "Didakta's Persians treebank spreadsheet"
+ },
+ "by": {
+  "team": "Didakta annotators",
+  "model": "Claude draft, not yet reviewed"
+ }
+}
