@@ -29,3 +29,12 @@ experiments/
 
 # --- Local build/cleanup scripts: kept out of the published repo ---
 scripts/
+
+# --- Annotation experiments: downloaded sources (~1.9 GB) stay local ---
+# READMEs, manifests, derived data and tools are tracked; tools/fetch2.py rebuilds sources.
+annotattion-experiments/*/sources/
+# 88 MB, over GitHub's 50 MB warning; tools/lsj_subset.py rebuilds it
+annotattion-experiments/reference/derived/lsj-cyropaedia-anabasis/lsj-subset.jsonl
+# Rebuildable annotation context (~140 MB): tools/build_base.py and tools/build_bundles.py regenerate them
+annotattion-experiments/*/annotation/base-sentences.jsonl
+annotattion-experiments/*/annotation/sentences.jsonl
