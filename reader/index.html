@@ -64,8 +64,6 @@ button { font: inherit; color: inherit; }
 }
 .brand { font-weight: 600; letter-spacing: .02em; text-decoration: none; color: var(--ink); white-space: nowrap; }
 .brand span { font-family: var(--greek); font-weight: 400; color: var(--accent); }
-.brand { display: inline-flex; align-items: center; gap: 8px; }
-.brand img { display: block; height: 28px; width: auto; }
 .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-left: auto; min-width: 0; }
 .nav .work { font-family: var(--greek); font-size: 17px; }
 .nav select, .nav button {
@@ -213,7 +211,7 @@ cite.c { font-style: normal; font-size: 11.5px; white-space: nowrap; color: var(
 })();
 </script>
 <header class="top" id="top">
-  <a class="brand" href="#"><img src="img/didakta-logo-small.png" alt="Didakta" width="64" height="28"><span>Reader</span></a>
+  <a class="brand" href="#">Didakta <span>Reader</span></a>
   <nav class="nav" id="nav" hidden>
     <span class="work" id="nav-work"></span>
     <button id="prev" type="button" aria-label="Previous book">‹</button>
