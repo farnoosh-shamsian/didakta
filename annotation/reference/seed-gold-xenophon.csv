@@ -1,0 +1,195 @@
+tag,family,status,work,citation,sentence_uid,token_id,form,lemma,postag,relation,tree_source,match,quote,translation
+AccCaus,,"located, no eligible bold token",anabasis,3.2.20,anab.3.2.20.s1,,,,,,,50%,τοῦτ᾽ ἄχθεσθε,for this reason you are vexed
+AccDoubl,CASE,tagged,anabasis,1.1.2,anab.1.1.2.s2,13,στρατηγὸν,στρατηγός,n-s---ma-,OCOMP,gorman,100%,στρατηγὸν αὐτὸν ἀπέδειξε,he appointed him general
+AccDoubl,CASE,tagged,anabasis,7.6.38,anab.7.6.38.s1,16,πατέρα,πατήρ,n-s---ma-,OCOMP,glaux-auto,100%,πατέρα ἐμὲ ἐκαλεῖτε,you were wont to call me father
+AccDoubl,CASE,tagged,cyropaedia,1.3.18,cyr.1.3.18.s2,9,δεσπότην,δεσπότης,n-s---ma-,OCOMP,gorman,100%,ἑαυτὸν δεσπότην πεποίηκεν,he has made himself master
+AccDoubl,CASE,tagged,anabasis,1.3.14,anab.1.3.14.s3,5,πλοῖα,πλοῖον,n-p---na-,OBJ,gorman,100%,Κῦρον αἰτεῖν πλοῖα,to ask Cyrus for boats
+AccDoubl,CASE,phrase member,anabasis,3.2.11,anab.3.2.11.s1,7,τοὺς,ὁ,l-p---ma-,ATR,gorman,100%,ἀναμνήσω ὑμᾶς καὶ τοὺς κινδύνους,I will remind you of the dangers also
+AccDoubl,CASE,tagged,anabasis,3.2.11,anab.3.2.11.s1,12,κινδύνους,κίνδυνος,n-p---ma-,OBJ,gorman,100%,ἀναμνήσω ὑμᾶς καὶ τοὺς κινδύνους,I will remind you of the dangers also
+AccOath,CASE,tagged,anabasis,6.1.31,anab.6.1.31.s2,14,θεοὺς,θεός,n-p---ma-,OBJ_CO,glaux-auto,100%,ὀμνύω ὑμῖν θεοὺς πάντας καὶ πάσας,I swear to you by all the gods and goddesses.
+AccOath,CASE,tagged,anabasis,6.1.31,anab.6.1.31.s2,15,πάντας,πᾶς,p-p---ma-,ATR,glaux-auto,100%,ὀμνύω ὑμῖν θεοὺς πάντας καὶ πάσας,I swear to you by all the gods and goddesses.
+AccOath,CASE,phrase member,anabasis,6.1.31,anab.6.1.31.s2,16,καὶ,καί,c--------,COORD,glaux-auto,100%,ὀμνύω ὑμῖν θεοὺς πάντας καὶ πάσας,I swear to you by all the gods and goddesses.
+AccOath,CASE,tagged,anabasis,6.1.31,anab.6.1.31.s2,17,πάσας,πᾶς,p-p---fa-,OBJ_CO,glaux-auto,100%,ὀμνύω ὑμῖν θεοὺς πάντας καὶ πάσας,I swear to you by all the gods and goddesses.
+AccObj,CASE,phrase member,anabasis,1.8.26,anab.1.8.26.s2,8,τὸν,ὁ,l-s---ma-,ATR,gorman,100%,τὸν ἄνδρα ὁρῶ,I see the man
+AccObj,CASE,tagged,anabasis,1.8.26,anab.1.8.26.s2,9,ἄνδρα,ἀνήρ,n-s---ma-,OBJ,gorman,100%,τὸν ἄνδρα ὁρῶ,I see the man
+AccResp,CASE,tagged,anabasis,4.2.2,anab.4.2.2.s1,6,πλῆθος,πλῆθος,n-s---na-,OBJ,glaux-auto,100%,πλῆθος ὡς δισχίλιοι,about two thousand in number
+AccSpac,CASE,tagged,cyropaedia,1.6.43,cyr.1.6.43.s1,18,ὁδοὺς,ὁδός2,n-p---fa-,OBJ,gorman,75%,ἄγειν (στρατιὰν) στενὰς ὁδούς,to lead an army over narrow roads
+AccSpac,CASE,tagged,anabasis,1.2.5,anab.1.2.5.s3,6,σταθμοὺς,σταθμός,n-p---ma-,ADV,gorman,100%,"ἐξελαύνει σταθμοὺς τρεῖς, παρασάγγας εἴκοσι καὶ δύο","he advances three stages, twenty- two parasangs"
+AccSpac,CASE,tagged,anabasis,1.2.5,anab.1.2.5.s3,8,παρασάγγας,παρασάγγης,n-p---ma-,ADV,gorman,100%,"ἐξελαύνει σταθμοὺς τρεῖς, παρασάγγας εἴκοσι καὶ δύο","he advances three stages, twenty- two parasangs"
+AccSubj,CASE,tagged,anabasis,1.3.6,anab.1.3.6.s1,3,ὑμᾶς,σύ,p-p---ma-,SBJ,gorman,100%,νομίζω γὰρ ὑμᾶς ἐμοὶ εἶναι καὶ πατρίδα καὶ φίλους,for I think you are to me both fatherland and friends
+AccSubj,CASE,phrase member,anabasis,2.2.21,anab.2.2.21.s2,12,τοὺς,ὁ,l-p---ma-,ATR,glaux-auto,83%,παρήγγειλε τὰ ὅπλα τίθεσθαι τοὺς Ἕλληνας,he issued orders that the Greeks should get under arms
+AccSubj,CASE,tagged,anabasis,2.2.21,anab.2.2.21.s2,13,Ἕλληνας,Ἕλλην,n-p---ma-,OBJ,glaux-auto,83%,παρήγγειλε τὰ ὅπλα τίθεσθαι τοὺς Ἕλληνας,he issued orders that the Greeks should get under arms
+AccTime,CASE,tagged,anabasis,1.2.6,anab.1.2.6.s2,3,ἡμέρας,ἡμέρα,n-p---fa-,ADV,gorman,100%,ἔμεινεν ἡμέρας ἑπτά,he remained seven days
+Act,VOICE,tagged,anabasis,2.2.20,anab.2.2.20.s1,37,λήψεται,λαμβάνω,v3sfim---,ADV,glaux-auto,100%,λήψεται μισθὸν τάλαντον,he shall receive a talent as his reward
+Act,VOICE,tagged,anabasis,1.8.26,anab.1.8.26.s2,10,ὁρῶ,ὁράω,v1spia---,OBJ,gorman,100%,τὸν ἄνδρα ὁρῶ,I see the man
+Act,VOICE,tagged,anabasis,1.1.9,anab.1.1.9.s2,4,ἦν,εἰμί,v3siia---,PRED,gorman,100%,Κλέαρχος φυγὰς ἦν,Clearchus was an exile
+Act,VOICE,tagged,anabasis,1.4.10,anab.1.4.10.s3,8,κατέκαυσεν,κατακαίω,v3saia---,PRED_CO,gorman,100%,Κῦρος τὰ βασίλεια κατέκαυσεν,Cyrus burnt down the palace (i.e. had it burnt down)
+Aor,TENSE,tagged,anabasis,6.3.11,anab.6.3.11.s3,4,συνέλεξε,συλλέγω,v3saia---,PRED_CO,glaux-auto,100%,σκοποὺς δὲ καταστήσας συνέλεξε τοὺς στρατιώτας καὶ ἔλεξεν,and after he posted watchers he called the troops together and spoke as follows
+Aor,TENSE,tagged,anabasis,6.3.11,anab.6.3.11.s3,8,ἔλεξεν,λέγω,v3saia---,PRED_CO,glaux-auto,100%,σκοποὺς δὲ καταστήσας συνέλεξε τοὺς στρατιώτας καὶ ἔλεξεν,and after he posted watchers he called the troops together and spoke as follows
+AorComp,TENSE,tagged,anabasis,1.2.9,anab.1.2.9.s2,2,ἔμεινε,μένω,v3saia---,PRED,gorman,100%,ἐνταῦθα ἔμεινε Κῦρος ἡμέρας τριάκοντα,Cyrus remained thirty days there
+AorIter,TENSE,tagged,cyropaedia,7.1.14,cyr.7.1.14.s1,11,εἶπεν,εἶπον,v3saia---,PRED,gorman,100%,εἶπεν ἄν,he used to say
+AorIter,TENSE,tagged,cyropaedia,7.1.10,cyr.7.1.10.s4,7,ἔλεξεν,λέγω3,v3saia---,PRED,gorman,100%,ἂν ἔλεξεν,he was wont to say
+AorNoni,TENSE,tagged,cyropaedia,6.1.38,cyr.6.1.38.s3,3,γένοιτο,γίγνομαι,v3saom---,ADV,glaux-auto,100%,εἰ γὰρ γένοιτο,would that it might happen
+AorNoni,TENSE,tagged,anabasis,4.1.20,anab.4.1.20.s2,1,βλέψον,βλέπω,v2sama---,OBJ_CO,glaux-auto,100%,βλέψον πρὸς τὰ ὄρη,look (cast a glance) toward the mountains
+AorNoni,TENSE,tagged,cyropaedia,4.5.47,cyr.4.5.47.s2,10,δότε,δίδωμι,v2pama---,PRED,glaux-auto,50%,ἡμῖν τοὺς ἵππους δότε,give the horses to us
+AorNoni,TENSE,tagged,cyropaedia,4.1.23,cyr.4.1.23.s8,1,ἐπομόσας,ἐπόμνυμι,v-sapamn-,ADV,glaux-auto,100%,ἐπομόσας ἔφη,he took an oath and said
+ArtAbst,ART,tagged,cyropaedia,4.1.5,cyr.4.1.5.s2,22,ἡ,ὁ,l-s---fn-,ATR,glaux-auto,100%,ἡ ἀρετὴ μᾶλλον ἢ ἡ φυγὴ σῴζει τὰς ψυχάς,valour rather than flight saves men's lives
+ArtAbst,ART,tagged,cyropaedia,4.1.5,cyr.4.1.5.s2,26,ἡ,ὁ,l-s---fn-,ATR,glaux-auto,100%,ἡ ἀρετὴ μᾶλλον ἢ ἡ φυγὴ σῴζει τὰς ψυχάς,valour rather than flight saves men's lives
+ArtGener,ART,tagged,anabasis,2.6.10,anab.2.6.10.s2,16,τὸν,ὁ,l-s---ma-,ATR,glaux-auto,90%,δεῖ τὸν στρατιώτην φοβεῖσθαι μᾶλλον τὸν ἄρχοντα ἢ τοὺς πολεμίους,the (a) soldier should fear his commander rather than the enemy
+ArtPoss,ART,tagged,anabasis,1.8.3,anab.1.8.3.s1,5,τοῦ,ὁ,l-s---ng-,ATR,gorman,88%,Κῦρος καταπηδήσας ἀπὸ τοῦ ἅρματος τὸν θώρακα ἐνέδυ,Cyrus leaped down from his chariot and put on his breastplate
+ArtPoss,ART,tagged,anabasis,1.8.3,anab.1.8.3.s1,7,τὸν,ὁ,l-s---ma-,ATR,gorman,88%,Κῦρος καταπηδήσας ἀπὸ τοῦ ἅρματος τὸν θώρακα ἐνέδυ,Cyrus leaped down from his chariot and put on his breastplate
+ArtPron,ART,tagged,anabasis,3.4.16,anab.3.4.16.s1,6,οἱ,ὁ,l-p---mn-,SBJ,gorman,100%,"οἱ μὲν ἐπορεύοντο, οἱ δ᾽ εἵποντο","the one party proceeded, the other followed"
+ArtPron,ART,tagged,anabasis,3.4.16,anab.3.4.16.s1,10,οἱ,ὁ,l-p---mn-,SBJ,gorman,100%,"οἱ μὲν ἐπορεύοντο, οἱ δ᾽ εἵποντο","the one party proceeded, the other followed"
+ArtPron,ART,tagged,anabasis,1.1.7,anab.1.1.7.s1,15,τοὺς,ὁ,l-p---ma-,OBJ,gorman,100%,"τοὺς μὲν ἀπέκτεινε, τοὺς δ᾽ ἐξέβαλεν","some he put to death, and others he expelled"
+ArtPron,ART,tagged,anabasis,1.1.7,anab.1.1.7.s1,19,τοὺς,ὁ,l-p---ma-,OBJ,gorman,100%,"τοὺς μὲν ἀπέκτεινε, τοὺς δ᾽ ἐξέβαλεν","some he put to death, and others he expelled"
+ArtPron,ART,tagged,cyropaedia,3.2.10,cyr.3.2.10.s1,12,οἱ,ὁ,l-p---mn-,ATR,glaux-auto,100%,"οἱ μέν τινες ἀπέθνῃσκον, οἱ δ᾽ ἔφευγον","some were killed, but others escaped"
+ArtPron,ART,tagged,cyropaedia,3.2.10,cyr.3.2.10.s1,20,οἱ,ὁ,l-p---mn-,SBJ,glaux-auto,100%,"οἱ μέν τινες ἀπέθνῃσκον, οἱ δ᾽ ἔφευγον","some were killed, but others escaped"
+ArtProp,ART,tagged,anabasis,1.4.7,anab.1.4.7.s1,46,τὸν,ὁ,l-s---ma-,ATR,gorman,100%,"τοὺς στρατιώτας αὐτῶν, τοὺς παρὰ Κλέαρχον ἀπελθόντας, εἴα Κῦρος τὸν Κλέαρχον ἔχειν","their soldiers who seceded to Clearchus, Cyrus allowed Clearchus to retain"
+ArtSubs,ART,tagged,anabasis,3.1.20,anab.3.1.20.s1,1,τὰ,ὁ,l-p---nn-,OBJ_AP,gorman,100%,τὰ τῶν στρατιωτῶν,the condition of the soldiers
+AutIden,AUT,tagged,anabasis,1.1.7,anab.1.1.7.s1,7,αὐτὰ,αὐτός,a-p---na-,ATR,gorman,100%,τὰ αὐτὰ ταῦτα,these same things
+AutIden,AUT,tagged,anabasis,2.1.5,anab.2.1.5.s2,3,αὐτὸς,αὐτός,p-s---mn-,ATR,glaux-auto,100%,αὐτὸς Μένων,Menon himself
+AutIden,AUT,tagged,anabasis,1.7.11,anab.1.7.11.s3,5,αὐτοῦ,αὐτός,a-s---mg-,ATR,gorman,100%,πρὸ αὐτοῦ βασιλέως,in front of the Great King himself
+DatAccom,CASE,tagged,anabasis,3.1.25,anab.3.1.25.s1,14,ὑμῖν,σύ,p-p---md-,OBJ,gorman,100%, ἕπεσθαι ὑμῖν βούλομαι,I am willing to follow you
+DatAccom,CASE,phrase member,anabasis,1.7.14,anab.1.7.14.s1,10,τῷ,ὁ,l-s---nd-,ATR,gorman,100%,ἐξελαύνει τῷ στρατεύματι παντί,he marches out with all his army
+DatAccom,CASE,tagged,anabasis,1.7.14,anab.1.7.14.s1,11,στρατεύματι,στράτευμα,n-s---nd-,ADV,gorman,100%,ἐξελαύνει τῷ στρατεύματι παντί,he marches out with all his army
+DatAccom,CASE,tagged,anabasis,1.7.14,anab.1.7.14.s1,12,παντὶ,πᾶς,a-s---nd-,ATR,gorman,100%,ἐξελαύνει τῷ στρατεύματι παντί,he marches out with all his army
+DatAccom,CASE,tagged,anabasis,7.6.29,anab.7.6.29.s2,9,ἱππικῷ,ἱππικός,a-s---nd-,OBJ_CO,glaux-auto,100%,ἡμῖν ἐφείποντο οἱ πολέμιοι καὶ ἱππικῷ καὶ πελταστικῷ,the enemy pursued us with their cavalry and peltasts
+DatAccom,CASE,tagged,anabasis,7.6.29,anab.7.6.29.s2,11,πελταστικῷ,πελταστικός,a-s---nd-,OBJ_CO,glaux-auto,100%,ἡμῖν ἐφείποντο οἱ πολέμιοι καὶ ἱππικῷ καὶ πελταστικῷ,the enemy pursued us with their cavalry and peltasts
+DatAdvn,CASE,tagged,anabasis,1.1.9,anab.1.1.9.s1,4,αὐτῷ,αὐτός,p-s---md-,OBJ,gorman,100%,ἄλλο στράτευμα αὐτῷ συνελέγετο,another army was being raised for him
+DatAgent,CASE,phrase member,anabasis,1.7.4,anab.1.7.4.s4,18,τοῖς,ὁ,l-p---md-,ADV,gorman,67%,τοῖς οἴκοι ζηλωτός,envied by those at home
+DatAgent,CASE,phrase member,anabasis,1.7.4,anab.1.7.4.s4,19,οἴκοι,οἴκοι,d--------,ATR,gorman,67%,τοῖς οἴκοι ζηλωτός,envied by those at home
+DatAgent,,"located, no eligible bold token",anabasis,1.7.4,anab.1.7.4.s4,,,,,,,67%,τοῖς οἴκοι ζηλωτός,envied by those at home
+DatCaus,CASE,tagged,anabasis,1.9.26,anab.1.9.26.s2,1,τούτοις,οὗτος,p-p---nd-,OBJ,gorman,100%,τούτοις ἥσθη,he was pleased at this
+DatCaus,CASE,phrase member,anabasis,5.7.20,anab.5.7.20.s2,8,τοῖς,ὁ,l-p---nd-,ATR,glaux-auto,100%,ἠχθόμεθα τοῖς γεγενημένοις,we were troubled at what had occurred
+DatCaus,CASE,tagged,anabasis,5.7.20,anab.5.7.20.s2,9,γεγενημένοις,γίγνομαι,v-prpmnd-,OBJ,glaux-auto,100%,ἠχθόμεθα τοῖς γεγενημένοις,we were troubled at what had occurred
+DatCaus,,"located, no eligible bold token",anabasis,2.6.13,anab.2.6.13.s1,,,,,,,75%,φιλίᾳ καὶ εὐνοίᾳ ἑπόμενοι,following out of friendship and good will
+DatEthic,CASE,tagged,cyropaedia,1.3.2,cyr.1.3.2.s4,6,μοι,ἐγώ,p1s---md-,ATR,gorman,100%,"ὦ μῆτερ, ὡς καλός μοι ὁ πάππος","oh mother, how handsome grandpa is\!"
+DatExpr,CASE,tagged,anabasis,6.4.1,anab.6.4.1.s3,19,εἰσπλέοντι,εἰσπλέω,v-sppamd-,ADV,glaux-auto,100%,ἡ Θρᾴκη ἐστὶν ἐπὶ δεξιὰ εἰς τὸν Πόντον εἰσπλέοντι,Thrace is on the right as you sail into the Pontus
+DatExpr,CASE,tagged,anabasis,3.5.15,anab.3.5.15.s1,37,διαβάντι,διαβαίνω,v-sapamd-,ATR,gorman,90%,ἔλεγον ὅτι ἡ ὁδὸς διαβάντι τὸν ποταμὸν ἐπὶ Λυδίαν φέροι,"they said that, when you had crossed the river, the road led to Lydia"
+DatInstr,CASE,phrase member,anabasis,1.5.12,anab.1.5.12.s3,14,τῇ,ὁ,l-s---fd-,ATR,gorman,100%,ἵησι τῇ ἀξίνῃ,he hurls his ax at him (hurls with his ax)
+DatInstr,CASE,tagged,anabasis,1.5.12,anab.1.5.12.s3,15,ἀξίνῃ,ἀξίνη,n-s---fd-,ADV,gorman,100%,ἵησι τῇ ἀξίνῃ,he hurls his ax at him (hurls with his ax)
+DatInstr,CASE,tagged,anabasis,6.4.27,anab.6.4.27.s4,8,φύλαξι,φύλαξ,n-p---md-,OBJ,glaux-auto,100%,φυλαττόμενοι φύλαξι,defending themselves by pickets
+DatMean,CASE,tagged,anabasis,1.8.19,anab.1.8.19.s2,16,δρόμῳ,δρόμος,n-s---md-,ADV,gorman,100%,θεῖν δρόμῳ,to run at full speed
+DatMean,CASE,tagged,cyropaedia,6.1.29,cyr.6.1.29.s2,7,τροχοῖς,τροχός,n-p---md-,OBJ_CO,glaux-auto,100%,κατεσκευάσατο ἅρματα τροχοῖς ἰσχυροῖς,he made chariots with strong wheels
+DatMean,CASE,tagged,cyropaedia,6.1.29,cyr.6.1.29.s2,9,ἰσχυροῖς,ἰσχυρός,a-p---md-,ATR,glaux-auto,100%,κατεσκευάσατο ἅρματα τροχοῖς ἰσχυροῖς,he made chariots with strong wheels
+DatMeas,CASE,tagged,anabasis,4.7.23,anab.4.7.23.s1,20,πολλῷ,πολύς,a-s---nd-,ADV,glaux-auto,100%,πολλῷ μείζων ἐγίγνετο ἡ βοὴ ὅσῳ δὴ πλείους ἐγίγνοντο,the shouting became much louder as the men increased in number
+DatPos,CASE,tagged,anabasis,2.2.11,anab.2.2.11.s3,4,ἡμῖν,ἐγώ,p-p---cd-,OBJ,glaux-auto,100%,ὑπάρχει ἡμῖν οὐδὲν τῶν ἐπιτηδείων,we have no supply of provisions
+DatResp,CASE,phrase member,anabasis,2.6.9,anab.2.6.9.s2,7,τῇ,ὁ,l-s---fd-,ATR,glaux-auto,100%,τῇ φωνῇ τραχύς,harsh of voice
+DatResp,CASE,tagged,anabasis,2.6.9,anab.2.6.9.s2,8,φωνῇ,φωνή,n-s---fd-,ADV,glaux-auto,100%,τῇ φωνῇ τραχύς,harsh of voice
+DatResp,CASE,tagged,cyropaedia,2.3.5,cyr.2.3.5.s1,19,φρονήσει,φρόνησις,n-s---fd-,ADV,gorman,100%,φρονήσει διαφέρων,distinguished in understanding
+DatVerb,CASE,tagged,cyropaedia,1.6.19,cyr.1.6.19.s1,24,ἀνθρώποις,ἄνθρωπος,n-p---md-,OBJ,gorman,100%,ἐλπίδας ἐμποιεῖν ἀνθρώποις,to create expectations in men
+DatVerb,CASE,tagged,anabasis,4.1.10,anab.4.1.10.s2,4,αὐτοῖς,αὐτός,p-p---md-,OBJ,glaux-auto,100%,αὐτοῖς ἐπέπεσε τὸ Ἑλληνικόν,the Greek force fell upon them
+DatVerb,CASE,tagged,anabasis,2.6.27,anab.2.6.27.s1,10,αὐτοῖς,αὐτός,p-p---md-,OBJ,glaux-auto,100%,συναδικεῖν αὐτοῖς,to be their accomplice in wrong-doing
+DatVerb,CASE,tagged,anabasis,1.9.8,anab.1.9.8.s1,6,αὐτῷ,αὐτός,p-s---md-,OBJ,gorman,100%,ἐπίστευον αὐτῷ αἱ πόλεις,the cities trusted him
+DatVerb,CASE,phrase member,anabasis,5.2.30,anab.5.2.30.s3,8,τῷ,ὁ,l-s---md-,ATR,glaux-auto,100%,τῷ Μυσῷ ἐσήμηνε φεύγειν,he ordered the Mysian to flee
+DatVerb,CASE,tagged,anabasis,5.2.30,anab.5.2.30.s3,9,Μυσῷ,Μυσός,n-s---md-,OBJ,glaux-auto,100%,τῷ Μυσῷ ἐσήμηνε φεύγειν,he ordered the Mysian to flee
+DatVerb,CASE,tagged,anabasis,5.6.8,anab.5.6.8.s2,6,βασιλεῖ,βασιλεύς,n-s---md-,PNOM,glaux-auto,100%,οὗτοι οὐ παρεγένοντο βασιλεῖ,these did not join the king
+DatVerb,CASE,phrase member,cyropaedia,8.4.24,cyr.8.4.24.s1,19,τῷ,ὁ,l-s---md-,ATR,gorman,100%,τῷ Ὑρκανίῳ ἵππον ἐδωρήσατο,he presented a horse to the Hyrcanian
+DatVerb,CASE,tagged,cyropaedia,8.4.24,cyr.8.4.24.s1,29,Ὑρκανίῳ,Ὑρκάνιος,a-s---md-,OBJ,gorman,100%,τῷ Ὑρκανίῳ ἵππον ἐδωρήσατο,he presented a horse to the Hyrcanian
+DatVerb,CASE,tagged,anabasis,1.3.8,anab.1.3.8.s2,13,αὐτῷ,αὐτός,p-s---md-,OBJ,gorman,100%,πέμπων αὐτῷ ἄγγελον,sending a messenger to him
+DatVerb,CASE,phrase member,anabasis,1.9.19,anab.1.9.19.s3,4,τοῖς,ὁ,l-p---md-,ATR,gorman,100%,οὐ φθονῶν τοῖς πλουτοῦσιν,not cherishing envy against the rich
+DatVerb,CASE,tagged,anabasis,1.9.19,anab.1.9.19.s3,6,πλουτοῦσιν,πλουτέω,v-pppamd-,OBJ,gorman,100%,οὐ φθονῶν τοῖς πλουτοῦσιν,not cherishing envy against the rich
+DatVerb,CASE,tagged,anabasis,2.3.17,anab.2.3.17.s4,4,αὐτοῖς,αὐτός,p-p---md-,OBJ,glaux-auto,100%,ἐπεὶ δὲ ἀπήντησαν αὐτοῖς οἱ στρατηγοί,but when the generals met them
+Fut,TENSE,tagged,anabasis,2.2.20,anab.2.2.20.s1,37,λήψεται,λαμβάνω,v3sfim---,ADV,glaux-auto,100%,λήψεται μισθὸν τάλαντον,he shall receive a talent as his reward
+FutNoni,TENSE,tagged,anabasis,2.3.21,anab.2.3.21.s3,7,πολεμήσοντες,πολεμέω,v-pfpamn-,ADV,glaux-auto,100%,οὐ συνήλθομεν ὡς βασιλεῖ πολεμήσοντες,we have not come together for the purpose of waging war with the king
+FutperfInten,TENSE,phrase member,anabasis,2.4.5,anab.2.4.5.s7,5,λελείψεται,λείπω,v3sfim---,PRED_CO,glaux-auto,62%,εὐθὺς Ἀριαῖος ἀφεστήξει: ὥστε φίλος ἡμῖν οὐδεὶς λελείψεται,"Ariaeus will soon withdraw, so that we shall have no friend left"
+FutperfInten,,"located, no eligible bold token",anabasis,2.4.5,anab.2.4.5.s7,,,,,,,62%,εὐθὺς Ἀριαῖος ἀφεστήξει: ὥστε φίλος ἡμῖν οὐδεὶς λελείψεται,"Ariaeus will soon withdraw, so that we shall have no friend left"
+GenCaus,CASE,phrase member,cyropaedia,2.3.21,cyr.2.3.21.s7,6,τῆς,ὁ,l-s---fg-,ATR,gorman,100%,τοῦτον ἀγασθεὶς τῆς πρᾳότητος,admiring him for his mildness
+GenCaus,CASE,tagged,cyropaedia,2.3.21,cyr.2.3.21.s7,8,πρᾳότητος,πραότης,n-s---fg-,OBJ_CO,gorman,100%,τοῦτον ἀγασθεὶς τῆς πρᾳότητος,admiring him for his mildness
+GenCaus,CASE,phrase member,cyropaedia,5.4.32,cyr.5.4.32.s1,5,τοῦ,ὁ,l-s---ng-,ATR,glaux-auto,100%,τοῦ πάθους ᾤκτιρεν αὐτόν,he pitied him for his misery
+GenCaus,CASE,tagged,cyropaedia,5.4.32,cyr.5.4.32.s1,7,πάθους,πάθος,n-s---ng-,OBJ,glaux-auto,100%,τοῦ πάθους ᾤκτιρεν αὐτόν,he pitied him for his misery
+GenComp,CASE,tagged,cyropaedia,5.1.6,cyr.5.1.6.s1,3,ἡμῶν,ἐγώ,p-p---cg-,ATR,glaux-auto,67%,ἡμῶν ὁ γεραίτερος,the elder of us
+GenComp,CASE,phrase member,anabasis,3.3.11,anab.3.3.11.s3,6,τῶν,ὁ,l-p---mg-,ATR,gorman,100%,οἱ πρεσβύτατοι τῶν στρατηγῶν,the oldest of the generals
+GenComp,CASE,tagged,anabasis,3.3.11,anab.3.3.11.s3,7,στρατηγῶν,στρατηγός,n-p---mg-,ATR,gorman,100%,οἱ πρεσβύτατοι τῶν στρατηγῶν,the oldest of the generals
+GenMat,CASE,tagged,anabasis,6.4.4,anab.6.4.4.s2,3,ἡδέος,ἡδύς,a-s---ng-,ATR,glaux-auto,100%,κρήνη ἡδέος ὕδατος,a spring of sweet water
+GenMat,CASE,tagged,anabasis,6.4.4,anab.6.4.4.s2,4,ὕδατος,ὕδωρ,n-s---ng-,ATR,glaux-auto,100%,κρήνη ἡδέος ὕδατος,a spring of sweet water
+GenObj,,weak match (33%),anabasis,2.5.7,,,,,,,,,ὁ θεῶν πόλεμος,war with the gods
+GenPart,CASE,tagged,anabasis,3.1.3,anab.3.1.3.s1,8,αὐτῶν,αὐτός,p-p---mg-,ATR,gorman,100%,ὀλίγοι αὐτῶν,few of them
+GenPart,CASE,tagged,anabasis,1.7.13,anab.1.7.13.s1,26,πολεμίων,πολέμιος,n-p---mg-,ADV,gorman,100%,οἳ ὕστερον ἐλήφθησαν τῶν πολεμίων,those of the enemy who were taken later
+GenPos,,weak match (33%),anabasis,1.2.5,,,,,,,,,ὁ Κύρου στόλος,the expedition of Cyrus
+GenSep,CASE,tagged,anabasis,6.6.32,anab.6.6.32.s1,3,σου,σύ,p-s---cg-,OBJ,glaux-auto,100%,ταῦτα δέ σου τυχόντες,obtaining this of you
+GenSep,CASE,tagged,cyropaedia,1.6.44,cyr.1.6.44.s1,3,μου,ἐγώ,p1s---mg-,OBJ,gorman,100%,μάθε μου καὶ τάδε,learn this also from me
+GenSep,CASE,tagged,anabasis,1.1.1,anab.1.1.1.s1,1,Δαρείου,Δαρεῖος,n-s---mg-,PNOM_CO,gorman,100%,Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο,of Darius and Parysatis are born two sons
+GenSep,CASE,tagged,anabasis,1.1.1,anab.1.1.1.s1,3,Παρυσάτιδος,Παρύσατις,n-s---fg-,PNOM_CO,gorman,100%,Δαρείου καὶ Παρυσάτιδος γίγνονται παῖδες δύο,of Darius and Parysatis are born two sons
+GenSubj,CASE,phrase member,anabasis,1.2.17,anab.1.2.17.s4,19,τῶν,ὁ,l-p---mg-,ATR,gorman,100%,τῶν βαρβάρων φόβος,the fear of the barbarians (which they feel: οἱ βάρβαροι φοβοῦνται)
+GenSubj,CASE,tagged,anabasis,1.2.17,anab.1.2.17.s4,21,βαρβάρων,βάρβαρος,n-p---mg-,ATR,gorman,100%,τῶν βαρβάρων φόβος,the fear of the barbarians (which they feel: οἱ βάρβαροι φοβοῦνται)
+GenSubj,,weak match (33%),anabasis,3.2.4,,,,,,,,,ἡ βασιλέως ἐπιορκία,the perjury of the king (βασιλεὺς ἐπιορκεῖ)
+GenTime,CASE,phrase member,anabasis,1.7.18,anab.1.7.18.s1,27,δέκα,δέκα,a--------,ATR,gorman,100%,βασιλεὺς οὐ μαχεῖται δέκα ἡμερῶν,the king will not fight for ten days
+GenTime,CASE,tagged,anabasis,1.7.18,anab.1.7.18.s1,28,ἡμερῶν,ἡμέρα,n-p---fg-,ADV,gorman,100%,βασιλεὺς οὐ μαχεῖται δέκα ἡμερῶν,the king will not fight for ten days
+GenVerb,CASE,phrase member,anabasis,5.3.9,anab.5.3.9.s1,39,τῆς,ὁ,l-s---fg-,ATR,glaux-auto,100%,πάντες μετεῖχον τῆς ἑορτῆς,all took part in the festival
+GenVerb,CASE,tagged,anabasis,5.3.9,anab.5.3.9.s1,40,ἑορτῆς,ἑορτή,n-s---fg-,OBJ,glaux-auto,100%,πάντες μετεῖχον τῆς ἑορτῆς,all took part in the festival
+GenVerb,CASE,phrase member,anabasis,3.2.7,anab.3.2.7.s2,1,τοῦ,ὁ,l-s---mg-,ATR,gorman,100%,τοῦ λόγου ἤρχετο ὧδε,he began his speech as follows
+GenVerb,CASE,tagged,anabasis,3.2.7,anab.3.2.7.s2,2,λόγου,λόγος,n-s---mg-,OBJ,gorman,100%,τοῦ λόγου ἤρχετο ὧδε,he began his speech as follows
+GenVerb,CASE,tagged,cyropaedia,1.6.29,cyr.1.6.29.s3,38,ἀνθρώπων,ἄνθρωπος,n-p---mg-,OBJ,gorman,100%,ἀνθρώπων στοχάζεσθαι,to aim at men
+GenVerb,CASE,tagged,anabasis,3.1.3,anab.3.1.3.s1,12,σίτου,σῖτος,n-s---mg-,OBJ,gorman,100%,ὀλίγοι σίτου ἐγεύσαντο,few tasted food
+GenVerb,CASE,phrase member,cyropaedia,1.3.10,cyr.1.3.10.s7,21,τοῦ,ὁ,l-s---mg-,ATR,gorman,100%,ἀκροώμενοι τοῦ ᾁδοντος,listening to the singer
+GenVerb,CASE,tagged,cyropaedia,1.3.10,cyr.1.3.10.s7,22,ᾄδοντος,ἀείδω,v-sppamg-,OBJ,gorman,100%,ἀκροώμενοι τοῦ ᾁδοντος,listening to the singer
+ImpfCona,,weak match (12%),cyropaedia,5.5.2,,,,,,,,,"ἔπειθον αὐτούς, καὶ οὓς ἔπεισα, τούτους ἔχων ἐπορευόμην","I tried to persuade them, and I marched away with those whom I succeeded in persuading"
+ImpfDesc,TENSE,tagged,cyropaedia,7.1.38,cyr.7.1.38.s2,8,ἐμάχοντο,μάχομαι,v3piie---,PRED_CO,gorman,64%,"εὐθὺς ἀνεβόησάν τε πάντες καὶ προσπεσόντες ἐμάχοντο, ἐώθουν, ἐωθοῦντο, ἔπαιον, ἐπαίοντο","immediately all raised a shout and falling upon each other fought, pushed and were pushed, struck and were struck"
+ImpfDesc,TENSE,tagged,cyropaedia,7.5.26,cyr.7.5.26.s2,6,ἀπέθνῃσκον,ἀποθνῄσκω,v3piia---,PRED_CO,gorman,63%,"ἐπεὶ δὲ ταῦτα ἐρρήθη, ἐπορεύοντο: τῶν δὲ ἀπαντώντων οἱ μὲν ἀπέθνῃσκον, οἱ δὲ ἔφευγον πάλιν εἴσω, οἱ δὲ ἐβόων","and when these words had been spoken, they proceeded to advance; and of those who met them some were killed, others fled back indoors, and others shouted"
+ImpfDesc,TENSE,tagged,cyropaedia,7.5.26,cyr.7.5.26.s2,11,ἔφευγον,φεύγω,v3piia---,PRED_CO,gorman,63%,"ἐπεὶ δὲ ταῦτα ἐρρήθη, ἐπορεύοντο: τῶν δὲ ἀπαντώντων οἱ μὲν ἀπέθνῃσκον, οἱ δὲ ἔφευγον πάλιν εἴσω, οἱ δὲ ἐβόων","and when these words had been spoken, they proceeded to advance; and of those who met them some were killed, others fled back indoors, and others shouted"
+ImpfDesc,TENSE,tagged,cyropaedia,7.5.26,cyr.7.5.26.s2,17,ἐβόων,βοάω,v3piia---,PRED_CO,gorman,63%,"ἐπεὶ δὲ ταῦτα ἐρρήθη, ἐπορεύοντο: τῶν δὲ ἀπαντώντων οἱ μὲν ἀπέθνῃσκον, οἱ δὲ ἔφευγον πάλιν εἴσω, οἱ δὲ ἐβόων","and when these words had been spoken, they proceeded to advance; and of those who met them some were killed, others fled back indoors, and others shouted"
+ImpfDesc,TENSE,tagged,anabasis,4.8.1,anab.4.8.1.s2,10,ὥριζε,ὁρίζω,v3siia---,ATR,glaux-auto,93%,ἀφίκοντο ἐπὶ τὸν ποταμὸν ὃς ὥριζε τὴν τῶν Μακρώνων χώραν καὶ τὴν τῶν Σκυθηνῶν,they came to the river which divided the country of the Macrones from that of the Scytheni
+ImpfDesc,TENSE,tagged,anabasis,1.4.9,anab.1.4.9.s3,30,ἐνόμιζον,νομίζω,v3piia---,ATR_CO,gorman,100%,"ἐξελαύνει ἐπὶ ποταμὸν πλήρη ἰχθύων, οὓς οἱ Σύροι θεοὺς ἐνόμιζον","he marched to a river full of fish, which the Syrians regarded as gods"
+ImpfIter,TENSE,tagged,anabasis,1.6.10,anab.1.6.10.s4,7,προσεκύνουν,προσκυνέω,v3piia---,SBJ,gorman,100%,"ἐπεὶ εἶδον αὐτὸν οἵπερ πρόσθεν προσεκύνουν, καὶ τότε προσεκύνησαν","when they caught sight of him, the very men who before this were wont to prostrate themselves before him, prostrated themselves on this occasion also"
+ImpfIter,TENSE,tagged,cyropaedia,1.4.3,cyr.1.4.3.s2,39,ἐπεθύμει,ἐπιθυμέω,v3siia---,ADV,gorman,100%,ἐπεθύμει ἄν τις ἔτι πλείω αὐτοῦ ἀκούειν,people would (used to) desire to hear still more from him
+Ind,MOOD,tagged,anabasis,1.1.9,anab.1.1.9.s2,4,ἦν,εἰμί,v3siia---,PRED,gorman,100%,Κλέαρχος φυγὰς ἦν,Clearchus was an exile
+Ind,MOOD,tagged,anabasis,2.3.6,anab.2.3.6.s2,9,ἦν,εἰμί,v3siia---,SBJ,glaux-auto,86%,δῆλον ἦνι ὅτι ἐγγύς που βασιλεὺς ἦν,it was plain that the king was somewhere hard by
+Ind,MOOD,tagged,cyropaedia,2.1.21,cyr.2.1.21.s5,17,μαχοῦνται,μαχέομαι,v3ppie---,ADV,gorman,88%,δοὐδὲ δι᾽ ἓν ἄλλο τρέφονται ἢ ὅπως μαχοῦνται,nor are they maintained for any other single purpose than for fighting (lit. how they shall fight)
+IndCount,MOOD,tagged,cyropaedia,7.1.38,cyr.7.1.38.s1,3,ἔγνω,γιγνώσκω,v3saia---,PRED,gorman,100%,ἔγνω ἄν τις,"one might (could, would) have known"
+IndOblig,MOOD,tagged,anabasis,7.6.23,anab.7.6.23.s1,6,ἔδει,δέω,v3siia---,PRED,glaux-auto,100%,ἔδει τὰ ἐνέχυρα τότε λαβεῖν,I ought to have taken the pledges then
+IndOblig,MOOD,phrase member,anabasis,7.6.23,anab.7.6.23.s1,10,λαβεῖν,λαμβάνω,v--ana---,SBJ,glaux-auto,100%,ἔδει τὰ ἐνέχυρα τότε λαβεῖν,I ought to have taken the pledges then
+IndWish,MOOD,tagged,anabasis,2.1.4,anab.2.1.4.s3,2,ὤφελε,ὀφείλω,v3saia---,PRED,glaux-auto,100%,ὤφελε Κῦρος ζῆν,would that Cyrus were (now) alive (Cyrus ought to be alive)
+IndWish,MOOD,phrase member,anabasis,2.1.4,anab.2.1.4.s3,5,ζῆν,ζάω,v--pna---,OBJ,glaux-auto,100%,ὤφελε Κῦρος ζῆν,would that Cyrus were (now) alive (Cyrus ought to be alive)
+InfArt,INF,phrase member,cyropaedia,1.5.13,cyr.1.5.13.s6,9,τοῦ,ὁ,l-s---ng-,ATR,gorman,100%,τί οὖν ἐστιν . . . τοῦ τοῖς φίλοις ἀρήγειν κάλλιον;,what then is nobler than to help one's friends?
+InfArt,INF,tagged,cyropaedia,1.5.13,cyr.1.5.13.s6,12,ἀρήγειν,ἀρήγω,v--pna---,ADV,gorman,100%,τί οὖν ἐστιν . . . τοῦ τοῖς φίλοις ἀρήγειν κάλλιον;,what then is nobler than to help one's friends?
+InfDec,INF,tagged,anabasis,4.1.21,anab.4.1.21.s2,8,εἶναι,εἰμί,v--pna---,OBJ,glaux-auto,100%,οἱ ἡγεμόνες οὔ φασιν εἶναι ἄλλην ὁδόν,the guides say there is no other road
+InfDec,INF,tagged,cyropaedia,7.1.18,cyr.7.1.18.s3,17,εἶναι,εἰμί,v--pna---,OBJ,gorman,89%,πάντες ἐροῦσι τὸ λοιπὸν μηδὲν εἶναι κερδαλεώτερον τῆς ἀρετῆς,everybody in time to come will say that there is nothing more profitable than bravery
+InfDec,INF,tagged,anabasis,2.1.11,anab.2.1.11.s2,2,νικᾶν,νικάω,v--pna---,OBJ,glaux-auto,100%,βασιλεὺς νικᾶν ἡγεῖται,"the king thinks he is victorious,"
+InfDec,INF,tagged,anabasis,5.1.8,anab.5.1.8.s4,4,εἶναι,εἰμί,v--pna---,OBJ,glaux-auto,100%,οἴομαι βέλτιστον εἶναι,I think it is best
+InfDec,INF,tagged,anabasis,1.3.1,anab.1.3.1.s3,6,ἰέναι,ἔρχομαι,v--pna---,OBJ,gorman,100%,ὑπώπτευον ἐπὶ βασιλέα ἰέναι,they suspected that they were to go against the king
+InfDyn,INF,tagged,anabasis,2.1.16,anab.2.1.16.s5,10,ποιεῖν,ποιέω,v--pna---,SBJ,glaux-auto,100%,τί χρὴ ποιεῖν;,what must be done?
+InfDyn,INF,tagged,anabasis,3.3.18,anab.3.3.18.s1,42,ὠφελεῖν,ὠφελέω,v--pna---,ADV,gorman,100%,ἱκανοὶ ἡμᾶς ὠφελεῖν,able to assist us
+InfDyn,INF,tagged,anabasis,1.2.19,anab.1.2.19.s4,5,διαρπάσαι,διαρπάζω,v--ana---,ADV,gorman,100%,ταύτην τὴν χώραν ἐπέτρεψε διαρπάσαι τοῖς Ἕλλησιν,he gave this land over to the Greeks to plunder
+InfIdio,INF,tagged,cyropaedia,2.2.15,cyr.2.2.15.s5,17,εἶναι,εἰμί,v--pna---,OBJ,gorman,83%,οὐδὲ ξένοις ἑκὼν εἶναι γέλωτα παρέχεις,nor do you intentionally cause strangers to laugh
+MidIndir,VOICE,tagged,cyropaedia,1.6.2,cyr.1.6.2.s4,6,ἐδιδαξάμην,διδάσκω,v1saim---,PRED,gorman,100%,ἐγὼ γάρ σε ταῦτα ἐδιδαξάμην,for I had you taught this
+MidIndir,,"located, no eligible bold token",cyropaedia,8.6.12,cyr.8.6.12.s1,,,,,,,50%,παρατίθεσθαι σῖτον,to have food served up
+MidIndir,VOICE,tagged,cyropaedia,6.1.12,cyr.6.1.12.s3,10,ποιήσονται,ποιέω,v3pfim---,PRED,glaux-auto,100%,"ὅσοι ὅπλα ἀφῄρηνται, ταχὺ ἄλλα ποιήσονται",all who have had their arms taken from them will soon get others made
+MidIndir,VOICE,tagged,cyropaedia,2.1.30,cyr.2.1.30.s1,6,κατεσκευάσατο,κατασκευάζω,v3saim---,PRED,gorman,100%,ἑαυτῷ σκηνὴν κατεσκευάσατο,he had a tent prepared for himself
+MidMent,VOICE,tagged,cyropaedia,1.3.10,cyr.1.3.10.s7,19,ἀκροώμενοι,ἀκροάομαι,v-pppmmn-,ADV,gorman,100%,ἀκροώμενοι τοῦ ᾁδοντος,listening to the singer
+MidRecip,,"located, no eligible bold token",cyropaedia,7.4.5,cyr.7.4.5.s5,,,,,,,50%,ἐπιμείγνυσθαι ἀλλήλοις,to have friendly intercourse with one another
+NomPred,CASE,tagged,anabasis,1.1.9,anab.1.1.9.s2,3,φυγὰς,φυγάς,n-s---mn-,PNOM,gorman,100%,Κλέαρχος φυγὰς ἦν,Clearchus was an exile
+NomSubj,,weak match (0%),anabasis,1.2.3,,,,,,,,,ταῦτα οἱ αἱρετοὶ ἀγγέλλουσι τοῖς στρατιώταις,The delegates report these things to the soldiers
+NomSubj,CASE,tagged,anabasis,1.2.3,anab.1.2.3.s1,16,Πρόξενος,Πρόξενος,n-s---mn-,SBJ,gorman,100%,Πρόξενος παρῆν,Proxenus was present
+OptComm,MOOD,tagged,anabasis,3.2.37,anab.3.2.37.s3,7,ἡγοῖτο,ἡγέομαι,v3spoe---,PRED,gorman,100%,Χειρίσοφος ἡγοῖτο,let Chirisophus lead
+OptPoten,MOOD,tagged,cyropaedia,1.6.21,cyr.1.6.21.s4,1,γνοίης,γιγνώσκω,v2saoa---,PRED,gorman,71%,γνοίης δ᾽ ἂν ὅτι τοῦθ᾽ οὕτως ἔχει,you may see that this is so
+OptSubor,MOOD,tagged,anabasis,4.5.8,anab.4.5.8.s1,25,ὁρῴη,ὁράω,v3spoa---,ADV,glaux-auto,100%,"εἴ πού τι ὁρῴη βρωτόν, διεδίδου","if ever he saw anything to eat anywhere, he always distributed it"
+OptWish,MOOD,tagged,cyropaedia,6.1.38,cyr.6.1.38.s3,3,γένοιτο,γίγνομαι,v3saom---,ADV,glaux-auto,100%,εἰ γὰρ γένοιτο,would that it might happen
+PartAttr,,"located, no eligible bold token",anabasis,1.7.4,anab.1.7.4.s4,,,,,,,50%,ὁ οἴκαδε βουλόμενος ἀπιέναι,whoever wants to go home
+PartCirc,PART,tagged,anabasis,4.2.7,anab.4.2.7.s5,7,λιπόντες,λείπω,v-papamn-,ADV,glaux-auto,88%,(οἱ ἄνθρωποι) λιπόντες τὴν ὁδὸν φεύγοντες ὀλίγοι ἀπέθνῃσκον,by leaving the road and making off only a few were killed
+PartCirc,PART,tagged,anabasis,4.2.7,anab.4.2.7.s5,10,φεύγοντες,φεύγω,v-pppamn-,ADV,glaux-auto,88%,(οἱ ἄνθρωποι) λιπόντες τὴν ὁδὸν φεύγοντες ὀλίγοι ἀπέθνῃσκον,by leaving the road and making off only a few were killed
+PartCirc,PART,tagged,anabasis,4.5.16,anab.4.5.16.s1,26,τελευτῶν,τελευτάω,v-sppamn-,ADV,glaux-auto,100%,τελευτῶν ἐχαλέπαινεν,at last he became angry
+PartCirc,PART,tagged,anabasis,1.2.16,anab.1.2.16.s2,4,τεταγμένοι,τάσσω,v-prpemn-,ADV,gorman,100%,παρήλαυνον τεταγμένοι,they marched past in order
+PartCirc,PART,tagged,cyropaedia,3.2.25,cyr.3.2.25.s3,7,λῃζόμενοι,ληΐζομαι,v-pppmmn-,ADV,glaux-auto,50%,λῃζόμενοι ξῶσι,they live by pillaging
+PartCirc,PART,tagged,anabasis,1.1.4,anab.1.1.4.s2,10,φιλοῦσα,φιλέω,v-sppafn-,ADV,gorman,100%,"Παρύσατις . . . ὑπῆρχε τῷ Κύρῳ, φιλοῦσα αὐτὸν μᾶλλον ἢ τὸν βασιλεύοντα Ἀρταξέρξην",Parysatis favoured Cyrus because she loved him more than she did Artaxerxes the king
+PartCirc,PART,tagged,anabasis,1.1.7,anab.1.1.7.s2,7,συλλέξας,συλλέγω,v-sapamn-,ADV,gorman,100%,συλλέξας στράτευμα ἐπολιόρκει Μίλητον,having collected an army he laid siege to Miletus
+PartGen,PART,phrase member,anabasis,3.3.1,anab.3.3.1.s1,1,τούτων,οὗτος,p-p---ng-,SBJ,gorman,100%,τούτων λεχθέντων ἀνέστησαν,"this said, they rose"
+PartGen,PART,tagged,anabasis,3.3.1,anab.3.3.1.s1,2,λεχθέντων,λέγω3,v-pappng-,ADV,gorman,100%,τούτων λεχθέντων ἀνέστησαν,"this said, they rose"
+PartGen,PART,tagged,anabasis,1.3.10,anab.1.3.10.s2,3,μεταπεμπομένου,μεταπέμπω,v-sppemg-,ADV,gorman,100%,καὶ μεταπεμπομένου αὐτοῦ οὐκ ἐθέλω ἐλθεῖν,"even though he is sending for me, I am unwilling to go"
+PartGen,PART,phrase member,anabasis,1.3.10,anab.1.3.10.s2,4,αὐτοῦ,αὐτός,p-s---mg-,SBJ,gorman,100%,καὶ μεταπεμπομένου αὐτοῦ οὐκ ἐθέλω ἐλθεῖν,"even though he is sending for me, I am unwilling to go"
+PartGen,PART,phrase member,anabasis,1.2.22,anab.1.2.22.s1,8,οὐδενὸς,οὐδείς,p-s---mg-,SBJ,gorman,100%,Κῦρος ἀνέβη ἐπὶ τὰ ὄρη οὐδενὸς κωλύοντος,Cyrus ascended the mountains without opposition (lit. no one hindering) (or *since* no one opposed him).
+PartGen,PART,tagged,anabasis,1.2.22,anab.1.2.22.s1,9,κωλύοντος,κωλύω,v-sppamg-,ADV,gorman,100%,Κῦρος ἀνέβη ἐπὶ τὰ ὄρη οὐδενὸς κωλύοντος,Cyrus ascended the mountains without opposition (lit. no one hindering) (or *since* no one opposed him).
+PartSupp,PART,tagged,anabasis,3.1.19,anab.3.1.19.s1,13,οἰκτίρων,οἰκτίρω,v-sppamn-,PNOM_CO,gorman,75%,οὔποτ᾽ ἐπαυόμην ἡμᾶς οἰκτίρων,I never ceased pitying ourselves
+Pass,VOICE,tagged,cyropaedia,7.1.38,cyr.7.1.38.s3,3,ἐωθοῦντο,ὠθέω,v3piie---,PRED_CO,gorman,100%,"ἐώθουν, ἐωθοῦντο, ἔπαιον, ἐπαίοντο","they pushed, were pushed, they struck, were struck"
+Pass,VOICE,tagged,cyropaedia,7.1.38,cyr.7.1.38.s3,7,ἐπαίοντο,παίω,v3piie---,PRED_CO,gorman,100%,"ἐώθουν, ἐωθοῦντο, ἔπαιον, ἐπαίοντο","they pushed, were pushed, they struck, were struck"
+PerfFut,TENSE,tagged,anabasis,1.8.12,anab.1.8.12.s2,10,πεποίηται,ποιέω,v3srie---,OBJ,gorman,83%,"κἂν τοῦτο νικῶμεν, πάνθ᾽ ἡμῖν πεποίηται","and if we conquer in that quarter, everything has been (will have been) accomplished by us"
+PerfFut,TENSE,tagged,anabasis,6.6.23,anab.6.6.23.s1,20,ἀπολώλαμεν,ἀπόλλυμι,v1pria---,PRED_CO,glaux-auto,100%,τὸ ἐπὶ τούτῳ ἀπολώλαμεν,"for all he could do, we had perished"
+Pperf,TENSE,tagged,cyropaedia,6.2.9,cyr.6.2.9.s1,12,ἐπεπόμφει,πέμπω,v3slia---,ATR,glaux-auto,100%,ἦλθον οἱ Ἰνδοὶ ἐκ τῶν πολεμίων οὓς ἐπεπόμφει Κῦρος ἐπὶ κατασκοπήν,the Indians returned whom Cyrus had sent to get news of the enemy
+PresCona,TENSE,tagged,cyropaedia,8.5.19,cyr.8.5.19.s2,1,δίδωμι,δίδωμι,v1spia---,PRED,gorman,100%,δίδωμί σοι αὐτὴν ταύτην γυναῖκα,I offer you this woman herself as a wife
+PresNoni,TENSE,tagged,cyropaedia,4.5.47,cyr.4.5.47.s1,27,δίδοτε,δίδωμι,v2ppma---,PRED,glaux-auto,50%,τοὺς ἵππους ἐκείνοις δίδοτε,offer the horses to them
+PresPerf,TENSE,tagged,anabasis,1.4.8,anab.1.4.8.s4,4,οἴχονται,οἴχομαι,v3ppie---,OBJ,gorman,100%,οἶδα ὅπῃ οἴχονται,I know where they have gone
+PresPerf,TENSE,tagged,anabasis,1.9.28,anab.1.9.28.s2,8,ἀκούω,ἀκούω,v1spia---,ADV,gorman,100%,ἐξ ὧν ἀκούω,from what I hear (have heard)
+SubjDenia,MOOD,tagged,anabasis,2.2.12,anab.2.2.12.s2,13,δύνηται,δύναμαι,v3spsm---,PRED,glaux-auto,100%,οὐκέτι μὴ δύνηται βασιλεὺς ἡμᾶς καταλαβεῖν,the king will no longer be able to overtake us
+SubjHort,MOOD,tagged,cyropaedia,5.5.15,cyr.5.5.15.s2,8,σκοπῶμεν,σκοπέω,v1ppsa---,OBJ,glaux-auto,100%,ἄγε σκοπῶμεν,"come, let us consider"
+SubjProh,MOOD,tagged,anabasis,5.4.19,anab.5.4.19.s2,5,ἀθυμήσητε,ἀθυμέω,v2pasa---,PRED,glaux-auto,100%,μηδὲν ἀθυμήσητε,do not lose heart
+Voc,CASE,tagged,cyropaedia,2.2.7,cyr.2.2.7.s3,1,ἄνθρωπε,ἄνθρωπος,n-s---mv-,ExD,gorman,100%,ἄνθρωπε,my good fellow

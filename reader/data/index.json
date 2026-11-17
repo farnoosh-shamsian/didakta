@@ -327,8 +327,8 @@
     {
      "n": 1,
      "words": 14021,
-     "annotated": 53,
-     "kb": 745
+     "annotated": 4606,
+     "kb": 2006
     },
     {
      "n": 2,
@@ -434,6 +434,27 @@
  },
  "by": {
   "team": "Didakta annotators",
-  "model": "Claude draft, not yet reviewed"
+  "model": "Drafted by Claude"
+ },
+ "commentaries": {
+  "en-holden-1887-books1-2-notes": "Holden (1887), Cyropaedia I–II, notes",
+  "en-holden-1887-books3-5": "Holden (1887), Cyropaedia III–V",
+  "en-holden-1890-books6-8": "Holden (1890), Cyropaedia VI–VIII",
+  "en-holden-shuckburgh-1902-book1": "Holden & Shuckburgh (1902), Cyropaedia I",
+  "en-bigg-1888-book1": "Bigg (1888), Cyropaedia I",
+  "en-bigg-1886-books4-5": "Bigg (1886), Cyropaedia IV–V",
+  "en-gorham-1856": "Gorham (1856), Cyropaedia",
+  "en-macmillan-1879-books7-8": "Macmillan (1879), Cyropaedia VII–VIII",
+  "de-breitenbach-1871-heft1": "Breitenbach (1871), Cyropaedia",
+  "de-breitenbach-1859-vol1": "Breitenbach (1859), Cyropaedia, vol. 1",
+  "de-breitenbach-1859-vol2": "Breitenbach (1859), Cyropaedia, vol. 2",
+  "de-hertlein-nitsche-1886": "Hertlein & Nitsche (1886), Cyropaedia",
+  "de-rehdantz-carnuth-1912-books1-3": "Rehdantz & Carnuth (1912), Anabasis I–III",
+  "de-rehdantz-carnuth-1905-books4-7": "Rehdantz & Carnuth (1905), Anabasis IV–VII",
+  "de-krueger-1871": "Krüger (1871), Anabasis",
+  "en-goodwin-white-1888-books1-4": "Goodwin & White (1888), Anabasis I–IV",
+  "en-steadman-2026-book1": "Steadman (2026), Anabasis I",
+  "en-steadman-2020-book3-beta": "Steadman (2020), Anabasis III",
+  "en-steadman-2018-book4": "Steadman (2018), Anabasis IV"
  }
 }

@@ -1,7 +1,7 @@
 # Publishes the Didakta Reader (the reader/ folder) to GitHub Pages:
 # https://farnoosh-shamsian.github.io/didakta/
 # One-time setup on GitHub: Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
-# Rebuild the folder with `python -I annotation-support/tools/build_reader.py`, then push.
+# Rebuild the folder with `python -I provenance/annotation/annotation-support/tools/build_reader.py` (local tools), then push.
 name: Publish the Didakta Reader
 
 on:

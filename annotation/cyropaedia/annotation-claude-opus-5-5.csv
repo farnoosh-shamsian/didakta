@@ -1,0 +1,100 @@
+uid,token_id,form,lemma,postag,CASE,CASE_conf,TENSE,TENSE_conf,VOICE,VOICE_conf,MOOD,MOOD_conf,INF,INF_conf,PART,PART_conf,ART,ART_conf,AUT,AUT_conf,reasoning,annotator
+cyr.1.1.1.s1,1,ἔννοιά,ἔννοια,n-s---fn-,NomSubj,0.98,—,,—,,—,,—,,—,,—,,—,,Subject of ἐγένετο: “a thought occurred” [TREE].,claude-opus-5-5
+cyr.1.1.1.s1,2,ποθʼ,πότε,d-------_,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,3,ἡμῖν,ἐγώ,p1p---md-,DatPos; DatExpr; DatAdvn,0.60; 0.20; 0.15,—,,—,,—,,—,,—,,—,,—,,"Dative of the person with γίγνομαι: “a thought came to be ours”, the dative of the possessor [SMYTH:1476] [CONV:R2]. Read with the mental noun ἔννοια it could also be the person who experiences the thought (DatExpr), and Miller's “occurred to us” allows that [TR]; the possessive construction with γίγνομαι is the more regular one. Tree: the tree attaches ἡμῖν to ἔννοιά, not to ἐγένετο.",claude-opus-5-5
+cyr.1.1.1.s1,4,ἐγένετο,γίγνομαι,v3saim---,—,,Aor; AorIngr,0.65; 0.30,MidSpon; Act,0.60; 0.35,Ind,1.00,—,,—,,—,,—,,"Aorist indicative stating a single past occurrence [SMYTH:1923]; γίγνομαι already means “come about”, so an ingressive reading adds little. γίγνομαι is middle-only and describes a change of state with no agent, the spontaneous-process middle [CONV:D3] [CONV:R1]. Indicative of a plain statement [MORPH].",claude-opus-5-5
+cyr.1.1.1.s1,5,ὅσαι,ὅσος,a-p---fn-,NomSubj,0.95,—,,—,,—,,—,,—,,—,,—,,"ὅσαι agrees with δημοκρατίαι, the subject of κατελύθησαν, and takes its function [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,6,δημοκρατίαι,δημοκρατία,n-p---fn-,NomSubj,1.00,—,,—,,—,,—,,—,,—,,—,,Subject of κατελύθησαν in the indirect question “how many democracies were overthrown” [TREE].,claude-opus-5-5
+cyr.1.1.1.s1,7,κατελύθησαν,καταλύω,v3paip---,—,,Aor; AorComp,0.85; 0.10,Pass,1.00,Ind,1.00,—,,—,,—,,—,,"Aorist passive indicative in an indirect question, which keeps the indicative [MORPH]. The aorist states the events as facts [SMYTH:1923]; the agent follows with ὑπό [SMYTH:1755], so the voice is passive.",claude-opus-5-5
+cyr.1.1.1.s1,8,ὑπὸ,ὑπό,r--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,9,τῶν,ὁ,l-p---mg-,—,,—,,—,,—,,—,,—,,ArtSubs; ArtGener,0.90; 0.05,—,,"τῶν makes the participle βουλομένων a noun, “those who wished” [SMYTH:1153]; it names a class only loosely, so ArtGener is a weak alternative [SMYTH:1124].",claude-opus-5-5
+cyr.1.1.1.s1,10,ἄλλως,ἄλλως,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,11,πως,πως,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,12,βουλομένων,βούλομαι,v-pppemg-,GenSep; GenCaus,0.75; 0.10,PresNoni,0.95,MidMent; Act,0.85; 0.10,—,,—,,PartAttr,0.95,—,,—,,"Genitive of the agent after ὑπό with the passive κατελύθησαν [SMYTH:1755]; the project tags this GenSep [CONV:D4] [PREP:ὑπό]. With τῶν it is a substantival participle, “those wishing” [SMYTH:2049]. Present participle outside indirect discourse: aspect only. βούλομαι is the card's own example of the mental-activity middle [CONV:D3].",claude-opus-5-5
+cyr.1.1.1.s1,13,πολιτεύεσθαι,πολιτεύω,v--pne---,—,,PresNoni,0.95,MidIndir; Act,0.50; 0.40,—,,InfDyn,0.95,—,,—,,—,,"Infinitive after the verb of will βουλομένων [SMYTH:1991], present for aspect, not in indirect discourse [SMYTH:1869]. πολιτεύεσθαι “live as a citizen, have one's form of government” is the middle of πολιτεύω [LSJ]; it can be read as acting in one's own interest (MidIndir) or as plain intransitive activity (Act). Tree: τῶν and βουλομένων hang on πολιτεύεσθαι; the phrase is τῶν … βουλομένων (object of ὑπό), and πολιτεύεσθαι is the object of βουλομένων.",claude-opus-5-5
+cyr.1.1.1.s1,14,μᾶλλον,μᾶλλον,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,15,ἢ,ἤ1,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,16,ἐν,ἐν,r--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,17,δημοκρατίᾳ,δημοκρατία,n-s---fd-,DatLoc; DatMean,0.85; 0.10,—,,—,,—,,—,,—,,—,,—,,"ἐν δημοκρατίᾳ “under a democracy”: ἐν with the dative of the state one lives in [SMYTH:1687], tagged as place under the provisional rule for prepositions [CONV:D1] [PREP:ἐν].",claude-opus-5-5
+cyr.1.1.1.s1,18,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,19,ὅσαι,ὅσος,a-p---fn-,NomSubj,0.95,—,,—,,—,,—,,—,,—,,—,,"Agrees with μοναρχίαι, a subject of ἀνῄρηνται [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,20,τʼ,τε,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,21,αὖ,αὖ,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,22,μοναρχίαι,μοναρχία,n-p---fn-,NomSubj,1.00,—,,—,,—,,—,,—,,—,,—,,"Subject of ἀνῄρηνται, coordinated with ὀλιγαρχίαι [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,23,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,24,ὅσαι,ὅσος,a-p---fn-,NomSubj,0.95,—,,—,,—,,—,,—,,—,,—,,"Agrees with ὀλιγαρχίαι, a subject of ἀνῄρηνται [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,25,τε,τε,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,26,ὀλιγαρχίαι,ὀλιγαρχία,n-p---fn-,NomSubj,1.00,—,,—,,—,,—,,—,,—,,—,,"Subject of ἀνῄρηνται, coordinated with μοναρχίαι [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,27,ἀνῄρηνται,ἀναιρέω,v3prie---,—,,Perf; PerfInten,0.90; 0.05,Pass,0.95,Ind,1.00,—,,—,,—,,—,,"Perfect indicative “have been abolished”, with ἤδη: the result still holds [MORPH]. The middle-passive form is passive here, with the agent ὑπὸ δήμων [SMYTH:1755].",claude-opus-5-5
+cyr.1.1.1.s1,28,ἤδη,ἤδη,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,29,ὑπὸ,ὑπό,r--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,30,δήμων,δῆμος,n-p---mg-,GenSep; GenCaus,0.75; 0.10,—,,—,,—,,—,,—,,—,,—,,"Agent of the perfect passive ἀνῄρηνται, with ὑπό [SMYTH:1755]; tagged GenSep under the project rule [CONV:D4] [PREP:ὑπό].",claude-opus-5-5
+cyr.1.1.1.s1,31,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,32,καὶ,καί,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,33,ὅσοι,ὅσος,a-p---mn-,NomSubj; NomInd,0.85; 0.10,—,,—,,—,,—,,—,,—,,—,,"ὅσοι … ἐπιχειρήσαντες names the whole group, which οἱ μὲν … οἱ δέ then divide: Holden calls this “partitive apposition to ὅσοι τυραννεῖν ἐπιχειρήσαντες” [COMM:en-holden-1887-books1-2-notes:13] [COMM:en-holden-shuckburgh-1902-book1:76] [SMYTH:981]. The whole stands as subject of the clause; because no verb takes it directly, a hanging nominative (NomInd) remains possible.",claude-opus-5-5
+cyr.1.1.1.s1,34,τυραννεῖν,τυραννεύω,v--pna---,—,,PresNoni,0.95,Act,1.00,—,,InfDyn,0.97,—,,—,,—,,"Infinitive completing ἐπιχειρέω “attempt to” [LSJ] [SMYTH:1991], not in indirect discourse, so aspect only. Active verb [MORPH].",claude-opus-5-5
+cyr.1.1.1.s1,35,ἐπιχειρήσαντες,ἐπιχειρέω,v-papamn-,NomSubj; NomInd,0.85; 0.10,AorNoni,0.95,Act,1.00,—,,—,,PartCirc; PartAttr,0.75; 0.20,—,,—,,"Holden–Shuckburgh renders τυραννεῖν ἐπιχειρήσαντες “after setting up a despotism” [COMM:en-holden-shuckburgh-1902-book1:76]: a temporal circumstantial participle with ὅσοι [SMYTH:2054]. Without an article it is not attributive, though “those who attempted” is close. Its case follows ὅσοι (see there) [SMYTH:981].",claude-opus-5-5
+cyr.1.1.1.s1,36,οἱ,ὁ,l-p---mn-,—,,—,,—,,—,,—,,—,,ArtPron,0.95,—,,"οἱ μέν … οἱ δέ “some … others”: the article as demonstrative [SMYTH:1107], dividing ὅσοι, as Holden notes [COMM:en-holden-1887-books1-2-notes:13].",claude-opus-5-5
+cyr.1.1.1.s1,37,μὲν,μέν,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,38,αὐτῶν,αὐτός,p-p---mg-,GenPart; GenPos,0.90; 0.05,—,,—,,—,,—,,—,,—,,AutPron,0.95,αὐτῶν “of them” with οἱ μέν: the genitive of the whole from which a part is taken [SMYTH:1306]. An oblique αὐτός standing alone is the personal pronoun [MORPH].,claude-opus-5-5
+cyr.1.1.1.s1,39,καὶ,καί,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,40,ταχὺ,ταχύς,a-s---na-,AccAdv,0.95,—,,—,,—,,—,,—,,—,,—,,Holden: καὶ ταχὺ πάμπαν “very soon indeed: καί is intensive” [COMM:en-holden-1887-books1-2-notes:13] [COMM:en-holden-shuckburgh-1902-book1:76]. ταχύ is a neuter accusative used as an adverb [SMYTH:1606].,claude-opus-5-5
+cyr.1.1.1.s1,41,πάμπαν,πάμπαν,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,42,κατελύθησαν,καταλύω,v3paip---,—,,Aor; AorComp,0.85; 0.10,Pass,1.00,Ind,1.00,—,,—,,—,,—,,"Aorist passive indicative “were overthrown”, still inside the indirect question, which keeps the indicative [MORPH] [SMYTH:1923].",claude-opus-5-5
+cyr.1.1.1.s1,43,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,44,οἱ,ὁ,l-p---mn-,—,,—,,—,,—,,—,,—,,ArtPron,0.95,—,,"The second half of οἱ μέν … οἱ δέ, the article as demonstrative [SMYTH:1107].",claude-opus-5-5
+cyr.1.1.1.s1,45,δὲ,δέ,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,46,κ-,καί,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,47,ἂν,ἐάν,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,48,ὁποσονοῦν,ὁπόσος,a-s---ma-,AccTime; AccAdv,0.90; 0.05,—,,—,,—,,—,,—,,—,,—,,"Agrees with χρόνον and shares its function, extent of time [SMYTH:1582].",claude-opus-5-5
+cyr.1.1.1.s1,49,χρόνον,χρόνος,n-s---ma-,AccTime,0.95,—,,—,,—,,—,,—,,—,,—,,ὁποσονοῦν χρόνον “for however short a time”: accusative of extent of time [SMYTH:1582] [TR].,claude-opus-5-5
+cyr.1.1.1.s1,50,ἄρχοντες,ἄρχω,v-pppamn-,NomSubj; NomPred,0.60; 0.35,PresNoni,0.95,Act,1.00,—,,—,,PartSupp; PartCirc,0.90; 0.08,—,,—,,"διαγένωνται ἄρχοντες “continue ruling”: διαγίγνομαι takes a supplementary participle [SMYTH:2097] [SMYTH:2088]. The participle agrees with the subject οἱ δέ; the tree makes it a predicate (PNOM), which is why NomPred stays as the alternative [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,51,διαγένωνται,διαγίγνομαι,v3pasm---,—,,AorNoni,0.95,MidSpon; Act,0.55; 0.35,SubjSubor,1.00,—,,—,,—,,—,,"κἂν (καὶ ἐάν) with the subjunctive: a general condition [SMYTH:2337], so SubjSubor [CONV:D6]; the aorist gives aspect only. διαγίγνομαι is a middle-only compound of γίγνομαι, so the project classes it as a spontaneous-process middle [CONV:D3]; its sense “continue” leaves Act possible.",claude-opus-5-5
+cyr.1.1.1.s1,52,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,53,θαυμάζονται,θαυμάζω,v3ppie---,—,,Pres; PresIter,0.65; 0.30,Pass,0.95,Ind,1.00,—,,—,,—,,—,,"Present passive indicative “they are admired” [MORPH]. It states what generally happens to such rulers, so the customary present is a real alternative [SMYTH:1876]; the plain tag is kept under the project default [CONV:D2].",claude-opus-5-5
+cyr.1.1.1.s1,54,ὡς,ὡς,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,55,σοφοί,σοφός,a-p---mn-,NomPred,0.95,—,,—,,—,,—,,—,,—,,—,,"σοφοί agrees with ἄνδρες, the predicate of γεγενημένοι “having proved wise men”, and takes its function [SMYTH:1040].",claude-opus-5-5
+cyr.1.1.1.s1,56,τε,τε,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,57,καὶ,καί,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,58,εὐτυχεῖς,εὐτυχής,a-p---mn-,NomPred,0.95,—,,—,,—,,—,,—,,—,,—,,Like σοφοί: part of the predicate of γεγενημένοι [SMYTH:1040].,claude-opus-5-5
+cyr.1.1.1.s1,59,ἄνδρες,ἀνήρ,n-p---mn-,NomPred,0.95,—,,—,,—,,—,,—,,—,,—,,"Predicate noun with γεγενημένοι, a verb of becoming [SMYTH:1040] [TREE].",claude-opus-5-5
+cyr.1.1.1.s1,60,γεγενημένοι,γίγνομαι,v-prpemn-,NomSubj; NomPred,0.90; 0.05,PerfNoni; Perf,0.90; 0.05,MidSpon; Act,0.60; 0.35,—,,—,,PartCirc; PartSupp,0.90; 0.05,—,,—,,"ὡς γεγενημένοι “as having proved”: a circumstantial participle of cause, given as others see it [SMYTH:2054]. It agrees with the subject of θαυμάζονται. Perfect participle outside indirect discourse: aspect of completed state [SMYTH:1872]. Voice as for γίγνομαι [CONV:D3] [CONV:R1].",claude-opus-5-5
+cyr.1.1.1.s1,61,.,punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s1,62,[0],,,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,1,πολλοὺς,πολύς,a-p---ma-,AccSubj; AccObj,0.65; 0.30,—,,—,,—,,—,,—,,—,,—,,"πολλούς is what was observed: subject of the participles ἔχοντας and δυναμένους in indirect discourse after καταμεμαθηκέναι [SMYTH:2106] [TREE]. Holden–Shuckburgh notes πολλούς … τοὺς μέν … τοὺς δέ as the same whole-and-part pattern as before [COMM:en-holden-shuckburgh-1902-book1:77]. As the object of the verb of learning, AccObj is close.",claude-opus-5-5
+cyr.1.1.1.s2,2,δʼ,δέ,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,3,ἐδοκοῦμεν,δοκέω,v1piia---,—,,Impf; ImpfDesc,0.80; 0.10,Act,1.00,Ind,1.00,—,,—,,—,,—,,"Imperfect indicative “we thought”, a state continuing in the past [SMYTH:1890]. Active verb, plain statement [MORPH].",claude-opus-5-5
+cyr.1.1.1.s2,4,καταμεμαθηκέναι,καταμανθάνω,v--rna---,—,,Perf; PerfNoni,0.80; 0.15,Act,1.00,—,,InfDec; InfDyn,0.75; 0.20,—,,—,,—,,"δοκέω “think” with the infinitive reports a thought: indirect discourse [SMYTH:1867]. The infinitive keeps the tense of “we have observed”, so Perf, not PerfNoni [CONV:D7].",claude-opus-5-5
+cyr.1.1.1.s2,5,καὶ,καί,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,6,ἐν,ἐν,r--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,7,ἰδίοις,ἴδιος,a-p---md-,DatLoc,0.90,—,,—,,—,,—,,—,,—,,—,,"Agrees with οἴκοις: “in private households also”, as Holden–Shuckburgh renders it [COMM:en-holden-shuckburgh-1902-book1:77] [PREP:ἐν] [CONV:D1].",claude-opus-5-5
+cyr.1.1.1.s2,8,οἴκοις,οἶκος,n-p---md-,DatLoc,0.95,—,,—,,—,,—,,—,,—,,—,,"ἐν with the dative of place [SMYTH:1687]; οἶκος is “household” rather than “house”, as Holden–Shuckburgh points out [COMM:en-holden-shuckburgh-1902-book1:77] [PREP:ἐν] [CONV:D1].",claude-opus-5-5
+cyr.1.1.1.s2,9,τοὺς,ὁ,l-p---ma-,—,,—,,—,,—,,—,,—,,ArtSubs; ArtPron,0.55; 0.40,—,,"τοὺς μὲν ἔχοντας … τοὺς δέ: the article both makes the participle a noun, “those who have” [SMYTH:1153], and does the work of ὁ μέν … ὁ δέ [SMYTH:1107], dividing πολλούς [COMM:en-holden-shuckburgh-1902-book1:77]. The two functions coincide here, so the certainty is split.",claude-opus-5-5
+cyr.1.1.1.s2,10,μὲν,μέν,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,11,ἔχοντας,ἔχω,v-pppama-,AccSubj; AccObj,0.60; 0.30,PresNoni; Pres,0.90; 0.05,Act,1.00,—,,—,,PartAttr; PartCirc,0.80; 0.15,—,,—,,"With τούς, a substantival participle “those who have” [SMYTH:2049], in apposition to πολλούς and sharing its case function [SMYTH:981]. It describes, it does not report, so its present gives aspect only.",claude-opus-5-5
+cyr.1.1.1.s2,12,καὶ,καί,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,13,πλείονας,πλείων,a-p---mac,AccObj,0.95,—,,—,,—,,—,,—,,—,,—,,"Agrees with οἰκέτας, the object of ἔχοντας [TREE].",claude-opus-5-5
+cyr.1.1.1.s2,14,οἰκέτας,οἰκέτης,n-p---ma-,AccObj,0.98,—,,—,,—,,—,,—,,—,,—,,Direct object of ἔχοντας “having more servants” [TREE].,claude-opus-5-5
+cyr.1.1.1.s2,15,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,16,τοὺς,ὁ,l-p---ma-,—,,—,,—,,—,,—,,—,,ArtSubs; ArtPron,0.55; 0.40,—,,"τοὺς δέ (with ἔχοντας understood): the second half of the division, as with τοὺς μέν [SMYTH:1107] [SMYTH:1153].",claude-opus-5-5
+cyr.1.1.1.s2,17,δὲ,δέ,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,18,καὶ,καί,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,19,πάνυ,πάνυ,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,20,ὀλίγους,ὀλίγος,a-p---ma-,AccObj,0.95,—,,—,,—,,—,,—,,—,,—,,Object of the understood ἔχοντας: “others (having) very few” [TREE].,claude-opus-5-5
+cyr.1.1.1.s2,21,",",punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,22,καὶ,καί,c--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,23,ὅμως,ὅμως,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,24,οὐ,οὐ,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,25,-δὲ,δέ,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,26,τοῖς,ὁ,l-p---md-,—,,—,,—,,—,,—,,—,,ArtSubs; ArtPart,0.55; 0.40,—,,"τοῖς ὀλίγοις τούτοις “these few”: the article makes ὀλίγοις a noun [SMYTH:1153], and at the same time points back to the few just mentioned [SMYTH:1120]. Holden–Shuckburgh: “not even these few, much less a larger number” [COMM:en-holden-shuckburgh-1902-book1:77].",claude-opus-5-5
+cyr.1.1.1.s2,27,ὀλίγοις,ὀλίγος,a-p---md-,DatVerb,0.90,—,,—,,—,,—,,—,,—,,—,,"Agrees with τούτοις, the dative object of χρῆσθαι [SMYTH:1509].",claude-opus-5-5
+cyr.1.1.1.s2,28,τούτοις,οὗτος,p-p---md-,DatVerb,0.95,—,,—,,—,,—,,—,,—,,—,,"χρῆσθαι “use, deal with” takes the dative [SMYTH:1509] [LSJ].",claude-opus-5-5
+cyr.1.1.1.s2,29,πάνυ,πάνυ,d--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,30,τι,τις,p-s---na-,AccAdv,0.95,—,,—,,—,,—,,—,,—,,—,,πάνυ τι “at all”: Holden glosses οὐδὲ … πάνυ τι as “not even these few at all” [COMM:en-holden-1887-books1-2-notes:14]. τι is an adverbial accusative [SMYTH:1606].,claude-opus-5-5
+cyr.1.1.1.s2,31,δυναμένους,δύναμαι,v-pppema-,AccSubj; AccObj,0.55; 0.35,Pres; PresNoni,0.60; 0.35,MidSpon; Act; MidMent,0.40; 0.35; 0.15,—,,—,,PartSupp; PartCirc,0.85; 0.10,—,,—,,"After καταμεμαθηκέναι “we had observed that …” the participle reports what was learnt: indirect discourse [SMYTH:2106], so its tense keeps its time value [SMYTH:1874] [CONV:D7]. It agrees with πολλούς. δύναμαι is middle-only and fits none of the middle types well [CONV:R3].",claude-opus-5-5
+cyr.1.1.1.s2,32,χρῆσθαι,χράω1,v--pne---,—,,PresNoni,0.95,MidIndir; Act,0.50; 0.40,—,,InfDyn,0.95,—,,—,,—,,"Infinitive completing δυναμένους “able to”, not in indirect discourse, so aspect only. χράομαι is a middle-only verb of using “for oneself”, which Smyth groups with the indirect middles [SMYTH:1730] [CONV:D3].",claude-opus-5-5
+cyr.1.1.1.s2,33,πειθομένοις,πείθω,v-pppemd-,DatVerb; DatAdvn,0.85; 0.05,PresNoni,0.95,MidMent; Pass; MidDir,0.40; 0.30; 0.20,—,,—,,PartSupp; PartCirc,0.50; 0.40,—,,—,,"χρῆσθαι πειθομένοις: Bigg renders it “to profit by their obedience … to maintain discipline among them” [COMM:en-bigg-1888-book1:79]. πειθομένοις agrees with the dative object τούτοις [SMYTH:1509] and says in what state they are used, between a supplementary and a circumstantial participle. πείθομαι “obey” could be read as a mental middle, as a passive “be persuaded”, or as reflexive “persuade oneself”; the evidence does not decide.",claude-opus-5-5
+cyr.1.1.1.s2,34,τοὺς,ὁ,l-p---ma-,—,,—,,—,,—,,—,,—,,ArtPart; ArtGener,0.85; 0.10,—,,"τοὺς δεσπότας “the masters”, the particular masters of these households [SMYTH:1120] [COMM:en-bigg-1888-book1:79].",claude-opus-5-5
+cyr.1.1.1.s2,35,δεσπότας,δεσπότης,n-p---ma-,AccSubj; AccObj,0.60; 0.30,—,,—,,—,,—,,—,,—,,—,,"Bigg: “τοὺς δεσπότας is added in apposition to τοὺς δέ for the sake of a little more distinctness, ‘I mean the masters’” [COMM:en-bigg-1888-book1:79]. So it shares the function of πολλούς and τοὺς δέ, the subject of the reported participles [SMYTH:981]. πείθομαι takes the dative, so it cannot be the object of πειθομένοις. Tree: attached as OBJ of πειθομένοις; it is in apposition to τοὺς δέ / πολλούς (Bigg).",claude-opus-5-5
+cyr.1.1.1.s2,36,.,punc1,u--------,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5
+cyr.1.1.1.s2,37,ἔχοντας,ἔχω,v-pppama-,—,,—,,—,,—,,—,,—,,—,,—,,,claude-opus-5-5

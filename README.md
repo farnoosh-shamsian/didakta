@@ -22,7 +22,7 @@ Shamsian, F., & Smyth, H. W. (2024). Didakta Grammar for Annotation (Persian) [D
 > [Logeion](https://logeion.uchicago.edu/) (University of Chicago)**, which
 > parses the inflected form and returns LSJ, Bailly, Pape, Middle Liddell and
 > the other lexica it aggregates. The migration covers all formats — PDF, EPUB,
-> DOCX, HTML, the split entries and the TEI XML — in all three languages.
+> DOCX, HTML, the split entries and the TEI XML — in every language.
 > Citations still point at Perseus, which hosts the texts, but now over HTTPS.
 > The Zenodo deposits are unchanged and remain the citable versions of record.
 
@@ -43,69 +43,66 @@ Shamsian, F., Crane, G., Rahimi, F., & Ferreira, A. D. (2024). Localizing Ancien
 - English
 - Persian
 - Kurdish
-- Portuguese (soon to be added here from https://github.com/ProjetosAbertosClassicasDigitais/Didakta-br-portuguese/)
+- Brazilian Portuguese, translated by A. D. Ferreira (see [Brazilian Portuguese edition](#brazilian-portuguese-edition))
 
 ## Repository Contents
 
-### Primary Files
+```
+grammar/        the Didakta grammar, one folder per language
+annotation/     Greek texts annotated with Didakta tags, one folder per text
+reader/         the Didakta Reader, a web page for reading the annotated texts
+```
 
-- `didakta-{language}.md` - Main markdown version of the grammar in each language.
+### The grammar (`grammar/`)
+
+One folder per language: `english/`, `persian/`, `kurdish/`, `portuguese/`. Each holds the same files:
+
+- `didakta-{language}.md` - Main markdown version of the grammar.
   Cleaned for reuse: hyperlinks and the table of contents are removed, and
   headings are proper markdown (`#`/`##`/`###`) with footnotes preserved.
 - `didakta-{language}.xml` - TEI P5 edition, with a per-word vocabulary link on
   every example. Generated from the markdown and the HTML export; see
   [TEI editions](#tei-editions) below.
-  The followings are downloaded from the Zenodo versions and are the basis of the markdown versions.
-  Their vocabulary links have been repointed at Logeion
-  (see [Vocabulary links](#vocabulary-links)); they are otherwise untouched, and
-  the PDFs keep their original pagination:
+- `split-entries/` - one markdown file per grammar entry (`AccAdv.md`, `GenPart.md`, …).
+
+The following are downloaded from the Zenodo versions and are the basis of the markdown versions.
+Their vocabulary links have been repointed at Logeion
+(see [Vocabulary links](#vocabulary-links)); they are otherwise untouched, and
+the PDFs keep their original pagination:
+
 - `didakta-{language}.html` - HTML format for web viewing
 - `didakta-{language}.epub` - E-book format
 - `didakta-{language}.pdf` - PDF version for printing from
 - `didakta-{language}.docx` - Microsoft Word format
 
-### Supporting files
+The Portuguese edition has no Zenodo deposit; its files are built from the
+translator's Google Doc instead (see [Brazilian Portuguese edition](#brazilian-portuguese-edition)).
 
-- `didakta-betacode.json` - the betacode-to-Greek mapping recovered from the
-  original HTML exports, 2,070 forms. It is what each old Perseus URL referred
-  to, kept so the migration stays reproducible after the betacode itself is gone
-  from the files.
+`grammar/didakta-betacode.json` is the betacode-to-Greek mapping recovered from the
+original HTML exports, 2,070 forms. It is what each old Perseus URL referred
+to, kept so the migration stays reproducible after the betacode itself is gone
+from the files.
 
-### Annotated texts (`data/`)
+### Annotated texts (`annotation/`)
 
-Greek texts annotated with Didakta tags, one CSV per text, one row per word:
+One folder per text, each with its annotated treebank (one CSV, one row per word):
 
-- `iliad-book1.csv`: Homer, *Iliad* 1. The tree is from the Perseus treebank, and the file includes the Persian word alignment and the Persian and Kurdish sentence translations.
-- `odyssey-book5.csv`: Homer, *Odyssey* 5. The sentence ids and the artificial nodes are from the Perseus treebank.
-- `aeschylus-persians.csv`: Aeschylus, *Persians*. The whole text is included; only the first part is annotated.
+- `iliad/`: Homer, *Iliad* 1 (`iliad-book1.csv`), and the earlier Didakta annotation of *Iliad* 2–24 (`iliad-books2-24.csv`, in its older format).
+- `odyssey/`: Homer, *Odyssey* 5.
+- `persians/`: Aeschylus, *Persians*. The whole text is included; only the first part is annotated.
+- `cyropaedia/`, `anabasis/`: Xenophon, annotated by a language model. Each folder also holds the prompt the annotation was made with, and the Greek text, translations, commentaries and treebanks the prompt draws on.
+- `reference/`: what all the texts share: the tag list (`didakta-tag-list.csv`), the tag cards, and the grammars the Xenophon prompts cite.
 
-Columns:
+The columns are described in [`annotation/README.md`](annotation/README.md).
 
-- `sent_id`, `tok_id`, `line`, `form`, `lemma`, `postag`: the word. `postag` is the 9-character Perseus (AGDT) morphology.
-- `CASE`, `TENSE`, `MOOD`, `VOICE`, `INF`, `PART`, `ART`, `AUT`: one Didakta tag per family. `Agr` and `GBP` count as CASE. `—` means the word's form cannot take that family; an empty cell means not annotated yet.
-- `CASE_alt`, `TENSE_alt`, …: second guesses, best first, separated by `; `.
-- A tag may carry a refinement after a dot, e.g. `SubjSubor.purpose`. The part before the dot is the Didakta tag and points to its grammar entry; the part after it narrows the tag and has no entry of its own. So far only `SubjSubor` and `OptSubor` are refined (Iliad, Odyssey), by clause type: `purpose`, `fear`, `conditional`, `temporal`, `relative`, `question` (indirect question), `simile`.
-- `status`: `uncertain` when there is a second guess, a `?`, or a clause type that still needs checking.
-- `note`: the annotator's notes. Two kinds of note were added later and are not the annotator's:
-  - a part starting `CLAUSE:` says why a clause type needs checking; the clause types were filled in from the tree and by reading;
-  - a part starting `OLD CODE:` says how a code from an earlier version of the tag list (`In1`, `Subcl4`, `N1`, …) was read as a current tag. Where that reading is a guess, the row is `uncertain`.
-- A tag is written only on the word it describes. Where the original sheet repeated it on a particle or preposition (ἄν with a potential optative, μή with an imperative), the note on that word says `with OptPoten`, `with ImprComm`, ….
-- `head`, `relation`: the dependency tree (Perseus AGDT style).
-- Text-specific columns:
-  - `artificial` (Iliad, Odyssey): `elliptic` marks a treebank placeholder for an unexpressed word, usually a verb (form `[0]`, no tags);
-  - `fas_align`, `note_kur`, `sentence_persian`, `sentence_kurdish` (Iliad; the sentence translations sit on each sentence's first row);
-  - `speaker`, `section` (*Persians*).
-- `didakta_raw`: the tag cell exactly as it was in the original spreadsheet.
+### Didakta Reader (`reader/`)
 
-The other two files are used by the scripts in `annotation-experiments/`:
-
-- `homer.csv`: Didakta gold for *Iliad* 2–24, in its earlier format.
-- `didakta-tag-list.csv`: the tag list, one row per tag with its category.
+A web page for reading every annotated text word by word, with its tree and Didakta tags. `.github/workflows/reader.yml` publishes it with GitHub Pages at https://farnoosh-shamsian.github.io/didakta/.
 
 ## TEI editions
 
-`didakta-english.xml`, `didakta-persian.xml` and `didakta-kurdish.xml` are TEI P5
-encodings of the three grammars, validated against `tei_all`. They are generated
+`grammar/<language>/didakta-<language>.xml` (English, Persian, Kurdish, Brazilian
+Portuguese) are TEI P5 encodings of the four grammars, validated against `tei_all`. They are generated
 from the two published formats together: the text comes from the markdown, and
 the link structure from the HTML export.
 
@@ -124,7 +121,7 @@ How the grammar is encoded:
 | Greek quoted inside running prose | `<foreign xml:lang="grc">`, its words linked as above |
 | References | `<back><div type="bibliography"><listBibl>` |
 
-**Entry identifiers are the same in all three languages**, so the editions line up
+**Entry identifiers are the same in every language**, so the editions line up
 entry by entry — `//div[@xml:id='GenPart']` is the partitive genitive in each file.
 This makes the TEI versions usable as a parallel corpus, as an annotation
 vocabulary (the Didakta tag is the `xml:id`), or as input to a TEI publishing
@@ -146,8 +143,9 @@ never did:
 | English | 3,309 | 438 (281 phrases) | **3,747** |
 | Persian | 3,296 | 424 (327 phrases) | **3,720** |
 | Kurdish | 3,311 | 402 (303 phrases) | **3,713** |
+| Brazilian Portuguese | 3,313 | 420 (264 phrases) | **3,733** |
 
-plus 648 / 646 / 648 passage links. All three files validate against `tei_all`.
+plus 648 / 646 / 648 / 642 passage links. All four files validate against `tei_all`.
 
 The Greek is tokenised from the markdown itself, so the vocabulary links do not
 depend on the export at all. The export is still read for the citation links, and
@@ -188,9 +186,39 @@ Zenodo were rewritten in place, one format at a time.
 The betacode-to-Greek mapping was learned from the HTML exports themselves, where
 each link's anchor text is the word as printed, so no link was rewritten on a
 guess; anything unresolvable was left alone and reported. That mapping is kept in
-`didakta-betacode.json` so the migration stays checkable now that the betacode is
+`grammar/didakta-betacode.json` so the migration stays checkable now that the betacode is
 gone from the files. PDF pagination, EPUB and DOCX structure, and everything
 other than the link targets are exactly as published.
+
+## Brazilian Portuguese edition
+
+`grammar/portuguese/` is the Portuguese translation by A. D. Ferreira (2024; first
+published at https://github.com/ProjetosAbertosClassicasDigitais/Didakta-br-portuguese/),
+machine-assisted with DeepL and then corrected and revised by hand. Unlike the other
+three languages it has no Zenodo deposit: every file here is built from the
+translator's Google Doc as it stood on 17 November 2026.
+
+- **Reviewer comments.** The comments on the Google Doc were resolved before the
+  files were built. Most record changes the reviewer had already made in the text;
+  the one asking for a clearer wording (`§PresPerf`, how the resultative present is
+  translated) was applied. Comments that question an entry or ask for new examples
+  (`§AorComp`, telic verbs in `§ImpfComp`) are left for a later revision.
+- **Corrections.** Only clear errors were corrected, mostly left over from the machine
+  translation: citations whose abbreviation had been translated (`E.` for `And.`,
+  `Idade.` for `Ages.`), wrong citations (`T. 5.18` for `Dem. 5.18`, `Il. 16.477` for
+  `16.482`), a Latin letter for a Greek one (`Αυδὸς` for `Λυδὸς`), passages still in
+  English, mistranslated terms (`átonos` for "atelic", `tribunal` for "court(yard)",
+  `alvos` for "targeteers") and a few sentences whose meaning had been inverted
+  (the indefinite article, the passive voice). The tag `FutPerfInten` is spelt
+  `FutperfInten`, as in the other languages. Wording that is merely debatable was
+  left as the translator wrote it.
+- **Formatting.** Curly quotation marks; arrows, quotation marks and bold restored
+  where they were missing or cut a word in two; the table of contents brought in
+  line with the headings; footnote references written alike (`CGCG 30.02`).
+- **Formats.** The DOCX is the corrected Google Doc, with its links repointed at
+  Logeion. The markdown, split entries and HTML are generated from that DOCX, and
+  the EPUB and PDF from the HTML, so all six formats carry the same text. The PDF
+  is therefore newly typeset, not a Google Docs export.
 
 ## Usage
 
@@ -199,7 +227,7 @@ other than the link targets are exactly as published.
 2. **Offline**: Download the EPUB or PDF formats for reading on e-readers or tablets
 3. **Development**: Use the markdown files for editing or integration into other projects
 4. **Interchange**: Use the TEI XML files for annotation tooling, parallel-text work, or digital-edition pipelines
-5. **Split Entries**: Access individual concepts from the split-entries folders for focused learning. More coming on that front soon!
+5. **Split Entries**: Access individual concepts from each language's `grammar/<language>/split-entries/` folder for focused learning. More coming on that front soon!
 
 ## License
 
