@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8765", "--directory", "reader"],
       "port": 8765
+    },
+    {
+      "name": "personal-site",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8766", "--directory", "../farnoosh-shamsian.github.io"],
+      "port": 8766
     }
   ]
 }
