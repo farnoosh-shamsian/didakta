@@ -8,7 +8,7 @@
         <title type="sub">A localizable grammar reference for Ancient Greek</title>
         <author><persName>Farnoosh Shamsian</persName><affiliation>Leipzig University</affiliation></author>
         <author><persName>Herbert Weir Smyth</persName></author>
-        <editor role="translator"><persName>A. D. Ferreira</persName></editor>
+        <editor role="translator"><persName>Anise D'Orange Ferreira</persName></editor>
         <respStmt>
           <resp>TEI P5 encoding, generated from the markdown edition</resp>
           <name>didakta_md2tei.py</name>

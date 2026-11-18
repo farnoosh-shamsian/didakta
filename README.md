@@ -8,8 +8,8 @@ Didakta has been developed by **Farnoosh Shamsian** at Leipzig University, prima
 
 ### Link to various versions and translations:
 
-Ferreira, A. D. (2024). Didakta Grammar for Annotation—Versão em Português. https://github.com/ProjetosAbertosClassicasDigitais/Didakta-br-portuguese/
-Rahimi, F., Shamsian, F., & Smyth, H. W. (2024). Didakta Grammar for Annotation (Kurdish) [Dataset]. https://doi.org/10.5281/zenodo.11221442
+Ferreira, A. D'O. (2024). Didakta Grammar for Annotation—Versão em Português [translated by Anise D'Orange Ferreira]. https://github.com/ProjetosAbertosClassicasDigitais/Didakta-br-portuguese/ (in this repository: [`grammar/portuguese/`](grammar/portuguese/))
+Rahimi, F., Shamsian, F., & Smyth, H. W. (2024). Didakta Grammar for Annotation (Kurdish) [Dataset; translated by Farshid Rahimi, Allameh Tabataba'i University, Tehran]. https://doi.org/10.5281/zenodo.11221442 (in this repository: [`grammar/kurdish/`](grammar/kurdish/))
 Shamsian, F., & Smyth, H. W. (2023). Didakta Grammar for Annotation (English) [Dataset]. https://doi.org/10.5281/zenodo.11216456
 Shamsian, F., & Smyth, H. W. (2024). Didakta Grammar for Annotation (Persian) [Dataset]. https://doi.org/10.5281/ZENODO.11216819
 
@@ -42,8 +42,8 @@ Shamsian, F., Crane, G., Rahimi, F., & Ferreira, A. D. (2024). Localizing Ancien
 
 - English
 - Persian
-- Kurdish
-- Brazilian Portuguese, translated by A. D. Ferreira (see [Brazilian Portuguese edition](#brazilian-portuguese-edition))
+- Kurdish (Central Kurdish, Sorani), translated by Farshid Rahimi, Allameh Tabataba'i University, Tehran (see [`grammar/kurdish/`](grammar/kurdish/))
+- Brazilian Portuguese, translated by Anise D'Orange Ferreira (see [Brazilian Portuguese edition](#brazilian-portuguese-edition) and her [translator's notes](grammar/portuguese/translator-notes.md))
 
 ## Repository Contents
 
@@ -192,11 +192,17 @@ other than the link targets are exactly as published.
 
 ## Brazilian Portuguese edition
 
-`grammar/portuguese/` is the Portuguese translation by A. D. Ferreira (2024; first
-published at https://github.com/ProjetosAbertosClassicasDigitais/Didakta-br-portuguese/),
-machine-assisted with DeepL and then corrected and revised by hand. Unlike the other
-three languages it has no Zenodo deposit: every file here is built from the
-translator's Google Doc as it stood on 17 November 2026.
+`grammar/portuguese/` is the Brazilian Portuguese translation by **Anise D'Orange
+Ferreira**, who published it in July 2024 at
+[ProjetosAbertosClassicasDigitais/Didakta-br-portuguese](https://github.com/ProjetosAbertosClassicasDigitais/Didakta-br-portuguese/).
+She made it with the help of DeepL and then corrected and revised it by hand against
+the Greek and the English. Her notes on that revision are in
+[`grammar/portuguese/translator-notes.md`](grammar/portuguese/translator-notes.md),
+copied with attribution from her repository's README, and the edition is described in
+[`grammar/portuguese/README.md`](grammar/portuguese/README.md). Unlike the other three
+languages it has no Zenodo deposit: every file here is built from the translator's
+Google Doc as it stood on 17 November 2026. Its text is the same as the docx, PDF and
+EPUB in her repository.
 
 - **Reviewer comments.** The comments on the Google Doc were resolved before the
   files were built. Most record changes the reviewer had already made in the text;
