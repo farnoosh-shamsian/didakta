@@ -327,20 +327,20 @@
     {
      "n": 1,
      "words": 14021,
-     "annotated": 4606,
-     "kb": 2006
+     "annotated": 8083,
+     "kb": 3007
     },
     {
      "n": 2,
      "words": 9209,
-     "annotated": 0,
-     "kb": 478
+     "annotated": 5401,
+     "kb": 1921
     },
     {
      "n": 3,
      "words": 9655,
-     "annotated": 0,
-     "kb": 496
+     "annotated": 430,
+     "kb": 612
     },
     {
      "n": 4,
@@ -363,14 +363,14 @@
     {
      "n": 7,
      "words": 10690,
-     "annotated": 0,
-     "kb": 560
+     "annotated": 6305,
+     "kb": 2245
     },
     {
      "n": 8,
      "words": 15900,
-     "annotated": 0,
-     "kb": 853
+     "annotated": 9296,
+     "kb": 3231
     }
    ]
   },
