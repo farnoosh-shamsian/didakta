@@ -24,12 +24,29 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
+    # Each attempt uploads its own artifact name: a re-run keeps the earlier attempt's artifact, and deploy-pages
+    # refuses to choose between two artifacts with the same name.
+    env:
+      ARTIFACT: github-pages-${{ github.run_attempt }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: reader
+          name: ${{ env.ARTIFACT }}
+      # GitHub sometimes lists a just-uploaded artifact a few seconds late ("No artifacts named ... were found"):
+      # if the first deploy fails, wait and try once more.
       - id: deployment
-        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ env.ARTIFACT }}
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: ${{ env.ARTIFACT }}
